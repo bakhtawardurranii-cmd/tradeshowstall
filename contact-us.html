@@ -299,10 +299,10 @@
           <span style="font-size:13px; font-weight:700; color:var(--ink);">WhatsApp</span>
           <span style="font-size:12.5px; color:var(--ink-soft);">0335 2062771</span>
         </a>
-        <a href="mailto:bakhtawardurranii@gmail.com" style="display:flex; flex-direction:column; align-items:center; gap:8px; text-align:center; background:#fff; border:1px solid var(--line); border-radius:var(--radius-md); padding:20px 12px; box-shadow:0 10px 26px rgba(20,18,39,0.06);">
+        <a href="mailto:projects@tradeshowstall.com" style="display:flex; flex-direction:column; align-items:center; gap:8px; text-align:center; background:#fff; border:1px solid var(--line); border-radius:var(--radius-md); padding:20px 12px; box-shadow:0 10px 26px rgba(20,18,39,0.06);">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2.2"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
           <span style="font-size:13px; font-weight:700; color:var(--ink);">Email</span>
-          <span style="font-size:12.5px; color:var(--ink-soft); word-break:break-all;">bakhtawardurranii@gmail.com</span>
+          <span style="font-size:12.5px; color:var(--ink-soft); word-break:break-all;">projects@tradeshowstall.com</span>
         </a>
       </div>
 
@@ -339,8 +339,8 @@
         </div>
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:20px;">
           <div>
-            <label style="display:block; font-size:13px; font-weight:700; margin-bottom:8px; color:var(--ink);">Show Dates</label>
-            <input type="text" name="Show Dates" placeholder="Installation and show dates, if known" style="width:100%; padding:14px 16px; border:1px solid var(--line); border-radius:10px; font-family:inherit; font-size:14.5px; background:var(--paper);">
+            <label style="display:block; font-size:13px; font-weight:700; margin-bottom:8px; color:var(--ink);">Show Date <span style="font-weight:500; color:var(--ink-soft);">(optional)</span></label>
+            <input type="date" name="Show Date" style="width:100%; padding:14px 16px; border:1px solid var(--line); border-radius:10px; font-family:inherit; font-size:14.5px; background:var(--paper); color:var(--ink); appearance:auto; -webkit-appearance:auto;">
           </div>
           <div>
             <label style="display:block; font-size:13px; font-weight:700; margin-bottom:8px; color:var(--ink);">Budget Range</label>
@@ -364,6 +364,11 @@
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_next" value="https://tradeshowstall.com/thank-you.html">
+
+        <label style="display:flex; align-items:flex-start; gap:10px; margin-bottom:22px; cursor:pointer;">
+          <input type="checkbox" id="consentCheck" required style="margin-top:3px; width:16px; height:16px; flex-shrink:0;">
+          <span style="font-size:13px; line-height:1.6; color:var(--ink-soft);">I agree to be contacted about my enquiry and have read the <a href="privacy-policy.html" class="inline-link" target="_blank" rel="noopener">Privacy Policy</a>. *</span>
+        </label>
 
         <button type="submit" class="btn-primary" style="width:100%; justify-content:center; border:none; cursor:pointer;">
           <span class="btn-label">Send Your Brief</span>
@@ -417,6 +422,8 @@
           <li><a href="exhibition-stall-fabrication.html">Fabrication</a></li>
           <li><a href="exhibition-stall-installation.html">Installation</a></li>
           <li><a href="modular-exhibition-booths.html">Modular Booths</a></li>
+          <li><a href="exhibition-branding.html">Branding</a></li>
+          <li><a href="exhibition-stall-cost-pakistan.html">Cost Guide</a></li>
         </ul>
       </div>
 
@@ -439,6 +446,8 @@
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="industries.html">Industries</a></li>
           <li><a href="contact-us.html">Contact</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
         </ul>
       </div>
 
@@ -447,7 +456,7 @@
         <ul>
           <li><a href="tel:+923352062771">0335 2062771</a></li>
           <li><a href="https://wa.me/923352062771" target="_blank" rel="noopener">WhatsApp Us</a></li>
-          <li><a href="mailto:bakhtawardurranii@gmail.com">bakhtawardurranii@gmail.com</a></li>
+          <li><a href="mailto:projects@tradeshowstall.com">projects@tradeshowstall.com</a></li>
           <li><a href="contact-us.html">Send us a message</a></li>
           <li style="color:rgba(255,255,255,0.6);">Karachi · Lahore · Islamabad</li>
           <li style="color:rgba(255,255,255,0.6);">Multan · Bahawalpur · Faisalabad</li>
@@ -516,12 +525,15 @@
       const requiredFields = briefForm.querySelectorAll('[required]');
       let firstInvalid = null;
       requiredFields.forEach((field) => {
-        if (!field.value.trim()) { if (!firstInvalid) firstInvalid = field; }
+        const isEmpty = field.type === 'checkbox' ? !field.checked : !field.value.trim();
+        if (isEmpty) { if (!firstInvalid) firstInvalid = field; }
       });
       const emailField = briefForm.querySelector('input[name="Email"]');
       const emailValid = emailField && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailField.value.trim());
       if (firstInvalid || !emailValid) {
-        statusEl.textContent = 'Please fill in your name, a valid email and phone number so we can reply.';
+        statusEl.textContent = firstInvalid && firstInvalid.type === 'checkbox'
+          ? 'Please confirm you agree to be contacted and have read the Privacy Policy.'
+          : 'Please fill in your name, a valid email and phone number so we can reply.';
         statusEl.style.color = 'var(--red)';
         (firstInvalid || emailField).focus();
         return;
