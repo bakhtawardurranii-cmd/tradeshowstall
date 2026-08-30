@@ -1,0 +1,9 @@
+# Netlify redirects — only used if this site is deployed on Netlify.
+# Each line is a single-hop 301. Netlify evaluates top-to-bottom and
+# stops at the first match, so these do not chain.
+
+# www -> non-www (any path), force https at the same time
+https://www.tradeshowstall.com/*  https://tradeshowstall.com/:splat  301!
+
+# /index.html -> / (root and any sub-path ending in index.html)
+https://tradeshowstall.com/index.html   https://tradeshowstall.com/   301!

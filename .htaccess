@@ -1,0 +1,32 @@
+# =====================================================================
+# tradeshowstall.com — canonicalization rules (Apache / .htaccess)
+#
+# Use this file only if the site is served from an Apache host
+# (e.g. cPanel / shared hosting) that reads .htaccess.
+#
+# GitHub Pages does NOT execute .htaccess (no server-side rewrites).
+# If this repo is deployed to GitHub Pages, use one of:
+#   - CLOUDFLARE-WORKER.js  (if the domain's DNS/proxy runs through Cloudflare)
+#   - _redirects            (if deployed to Netlify)
+#   - vercel.json           (if deployed to Vercel)
+# See SEO-CHANGES-README.md for details.
+#
+# Both rules below resolve in a SINGLE 301 hop each — no chains, no loops.
+# Canonical target for every URL on the site: https://tradeshowstall.com/...
+# =====================================================================
+
+RewriteEngine On
+
+# Rule 1 — /index.html (on any host/scheme) collapses straight to the
+# canonical root in one hop, regardless of whether host/scheme were
+# already correct.
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.tradeshowstall\.com$ [NC,OR]
+RewriteCond %{REQUEST_URI} ^/index\.html$ [NC]
+RewriteRule ^index\.html$ https://tradeshowstall.com/ [R=301,L]
+
+# Rule 2 — any other URL on the wrong scheme/host is sent straight to
+# the canonical scheme+host with the same path, in one hop.
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.tradeshowstall\.com$ [NC]
+RewriteRule ^(.*)$ https://tradeshowstall.com/$1 [R=301,L]
