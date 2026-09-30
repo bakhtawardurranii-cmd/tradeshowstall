@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://tradeshowstall.com/</loc><lastmod>2026-09-02</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url><loc>https://tradeshowstall.com/</loc><lastmod>2026-09-30</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://tradeshowstall.com/services.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://tradeshowstall.com/exhibition-stall-design.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://tradeshowstall.com/3d-exhibition-booth-design.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tradeshowstall.com/exhibition-stall-fabrication.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tradeshowstall.com/exhibition-stall-installation.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tradeshowstall.com/exhibition-stall-fabrication.html</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tradeshowstall.com/exhibition-stall-installation.html</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://tradeshowstall.com/modular-exhibition-booths.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://tradeshowstall.com/exhibition-branding.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tradeshowstall.com/custom-6x3-island-booth.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tradeshowstall.com/locations.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://tradeshowstall.com/karachi.html</loc><lastmod>2026-09-18</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://tradeshowstall.com/lahore.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tradeshowstall.com/islamabad.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tradeshowstall.com/multan.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tradeshowstall.com/bahawalpur.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tradeshowstall.com/faisalabad.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tradeshowstall.com/custom-6x3-island-booth.html</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tradeshowstall.com/locations.html</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tradeshowstall.com/karachi.html</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.9</priority><image:image><image:loc>https://tradeshowstall.com/images/plfe-karachi-expo-center-exhibition-stall-front-view.jpg</image:loc><image:caption>Front view of the Anisons and Blygold Pakistan exhibition stall design at Pakistan Lifestyle Furniture Expo, Karachi Expo Center</image:caption><image:geo_location>Karachi, Sindh, Pakistan</image:geo_location><image:title>PLFE 2026 exhibition stall design, Karachi Expo Center</image:title></image:image><image:image><image:loc>https://tradeshowstall.com/images/plfe-karachi-expo-center-exhibition-stall-aerial-view-1.jpg</image:loc><image:caption>Aerial view of the Anisons and Blygold Pakistan exhibition stall design at Pakistan Lifestyle Furniture Expo, Karachi Expo Center</image:caption><image:geo_location>Karachi, Sindh, Pakistan</image:geo_location><image:title>PLFE 2026 exhibition stall design, Karachi Expo Center</image:title></image:image><image:image><image:loc>https://tradeshowstall.com/images/plfe-karachi-expo-center-exhibition-stall-aerial-view-2.jpg</image:loc><image:caption>Reverse aerial view of the Anisons and Blygold Pakistan exhibition stall design at Pakistan Lifestyle Furniture Expo, Karachi Expo Center</image:caption><image:geo_location>Karachi, Sindh, Pakistan</image:geo_location><image:title>PLFE 2026 exhibition stall design, Karachi Expo Center</image:title></image:image></url>
+  <url><loc>https://tradeshowstall.com/lahore.html</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tradeshowstall.com/islamabad.html</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tradeshowstall.com/multan.html</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tradeshowstall.com/bahawalpur.html</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tradeshowstall.com/faisalabad.html</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tradeshowstall.com/industries.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tradeshowstall.com/portfolio.html</loc><lastmod>2026-09-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tradeshowstall.com/about-us.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://tradeshowstall.com/contact-us.html</loc><lastmod>2026-08-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://tradeshowstall.com/exhibition-stall-cost-pakistan.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tradeshowstall.com/exhibition-stall-fabricator-karachi.html</loc><lastmod>2026-09-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tradeshowstall.com/about-us.html</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tradeshowstall.com/contact-us.html</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tradeshowstall.com/exhibition-stall-cost-pakistan.html</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tradeshowstall.com/exhibition-stall-fabricator-karachi.html</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://tradeshowstall.com/exhibition-stall-designer-lahore.html</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://tradeshowstall.com/exhibition-stand-builder-islamabad.html</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://tradeshowstall.com/exhibition-stand-builder-islamabad.html</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
 </urlset>
