@@ -517,6 +517,20 @@
   .link-row a{font-weight:700; font-size:14.5px; color:var(--indigo-deep); border-bottom:1.5px solid rgba(98,98,170,0.3);}
   .prose-list{margin:0 0 16px; padding-left:20px; max-width:780px; font-size:15.5px; line-height:1.85; color:var(--ink-soft);}
   .prose-list strong{color:var(--ink);}
+  .hero-form{background:#fff; border:1px solid var(--line); border-radius:var(--radius-lg); padding:32px 30px 26px; box-shadow:0 26px 60px rgba(20,18,39,0.14);}
+  .hero-form h2{font-size:22px; font-weight:800; letter-spacing:-0.01em; margin:0 0 6px;}
+  .hero-form .sub{font-size:14px; color:var(--ink-soft); line-height:1.55; margin:0 0 20px;}
+  .hero-form .row{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:14px;}
+  .hero-form .row.one{grid-template-columns:1fr;}
+  .hero-form label{display:block; font-size:12.5px; font-weight:700; color:var(--ink-soft); margin-bottom:6px;}
+  .hero-form input{width:100%; padding:13px 14px; border:1px solid var(--line); border-radius:10px; font-family:inherit; font-size:14.5px; background:var(--paper); color:var(--ink);}
+  .hero-form input:focus{outline:2px solid var(--indigo); outline-offset:1px; background:#fff;}
+  .hero-form .btn-primary{width:100%; justify-content:center; margin-top:4px;}
+  .hero-form .btn-primary[disabled]{opacity:.7; cursor:progress;}
+  .hero-form .status{min-height:20px; font-size:13px; margin:12px 0 0; color:var(--ink-soft);}
+  .hero-form .fine{font-size:12px; color:var(--ink-soft); line-height:1.5; margin:8px 0 0;}
+  .hero-form .fine a{border-bottom:1px solid rgba(20,18,39,0.3);}
+  @media (max-width:520px){ .hero-form{padding:26px 20px 22px;} .hero-form .row{grid-template-columns:1fr;} }
 
   .chip-group{margin:0 0 26px; max-width:900px;}
   .chip-group h3{font-size:15px; font-weight:800; margin:0 0 10px; color:var(--ink);}
@@ -579,9 +593,29 @@
       <p class="lead">Expo stall fabrication, exhibition stall fabrication and exhibition booth fabrication for Islamabad and Rawalpindi exhibitors, built in our in-house Islamabad fabrication unit with local support throughout.</p>
       <div class="actions"><a href="contact-us.html" class="btn-primary">Get an Islamabad Quote <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="https://wa.me/923352062771?text=Hi%20Trade%20Show%20Stall%2C%20I%20need%20expo%20stall%20fabrication%20in%20Islamabad" class="btn-ghost-dark">WhatsApp us →</a></div>
     </div>
-    <div class="page-header-media reveal">
-      <img src="images/exhibition-stall-two-storey-tech-booth.webp" alt="Custom exhibition booth fabrication reference for formal venues" width="900" height="700" fetchpriority="high">
-      <span class="tag">Islamabad support</span>
+    <div class="reveal">
+      <form class="hero-form" id="quickQuoteForm" action="https://formsubmit.co/bakhtawardurranii@gmail.com" method="POST" novalidate>
+        <h2>Get a Islamabad stall quote</h2>
+        <p class="sub">Tell us your booth size and show. We will call or WhatsApp you back with a design direction.</p>
+        <div class="row">
+          <div><label for="qq-name">Your name</label><input id="qq-name" type="text" name="Full Name" required autocomplete="name" placeholder="Full name"></div>
+          <div><label for="qq-phone">Phone / WhatsApp</label><input id="qq-phone" type="tel" name="Phone" required autocomplete="tel" placeholder="03XX XXXXXXX"></div>
+        </div>
+        <div class="row one"><div><label for="qq-email">Email (optional)</label><input id="qq-email" type="email" name="Email" autocomplete="email" placeholder="you@company.com"></div></div>
+        <div class="row">
+          <div><label for="qq-size">Booth size</label><input id="qq-size" type="text" name="Booth Size" placeholder="e.g. 6m x 3m"></div>
+          <div><label for="qq-show">Show and date</label><input id="qq-show" type="text" name="Show and Date" placeholder="e.g. Expo Centre Lahore, Nov 2026"></div>
+        </div>
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <input type="hidden" name="_subject" value="Islamabad Page Quick Quote — Trade Show Stall Website">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://tradeshowstall.com/thank-you.html">
+        <input type="hidden" name="Source Page" value="islamabad.html (hero quick form)">
+        <button type="submit" class="btn-primary" id="qqSubmit"><span id="qqLabel">Request my quote</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <p class="status" id="qqStatus" role="status" aria-live="polite"></p>
+        <p class="fine">By sending this you agree to be contacted about your enquiry. See our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+      </form>
     </div>
   </section>
 
@@ -642,13 +676,13 @@
   <section class="content-section">
     <div class="wrap">
       <div class="section-head reveal" style="max-width:760px; margin-bottom:32px;"><p class="eyebrow">Related</p><h2 style="font-size:clamp(24px,3vw,34px); font-weight:800; letter-spacing:-0.015em; margin:0 0 16px;">More for Islamabad Exhibitors</h2></div>
-<div class="link-row"><a href="exhibition-stand-builder-islamabad.html">Exhibition stand builder in Islamabad →</a><a href="lahore.html">Lahore stall fabrication →</a><a href="karachi.html">Karachi stand builders →</a><a href="exhibition-stall-fabrication.html">Fabrication service →</a><a href="exhibition-stall-cost-pakistan.html">Cost guide →</a></div>
+<div class="link-row"><a href="exhibition-stand-builder-islamabad.html">Exhibition stand builder in Islamabad →</a><a href="lahore.html">Lahore stall fabrication →</a><a href="karachi.html">Karachi stand builders →</a><a href="exhibition-stall-fabrication.html">Fabrication service →</a><a href="exhibition-stall-cost-pakistan.html">Cost guide →</a><a href="industries.html">Stalls by industry →</a><a href="portfolio.html">Portfolio →</a></div>
     </div>
   </section>
   <div class="wrap final-wrap">
     <div class="final-cta reveal">
       <div class="final-cta-inner">
-        <h2>Planning a stall? Get a quote from our Karachi team.</h2>
+        <h2>Planning a stall? Get a quote from our Islamabad team.</h2>
         <p>Share your booth size, venue and show dates &mdash; we reply by call or WhatsApp with a design direction and a realistic estimate.</p>
         <a href="contact-us.html" class="btn-primary" style="box-shadow:0 14px 30px rgba(0,0,0,0.25);">Get a Quote <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
@@ -721,7 +755,9 @@
           <li><a href="https://wa.me/923352062771" target="_blank" rel="noopener">WhatsApp Us</a></li>
           <li><a href="mailto:projects@tradeshowstall.com">projects@tradeshowstall.com</a></li>
           <li><a href="contact-us.html">Send us a message</a></li>
-          <li style="color:rgba(255,255,255,0.6);">Karachi · Lahore · Islamabad</li>
+          <li style="color:rgba(255,255,255,0.6);"><a href="karachi.html">Karachi:</a> Office 606, 6th Floor, Noor Trade Center, University Road</li>
+          <li style="color:rgba(255,255,255,0.6);"><a href="lahore.html">Lahore:</a> 53B Model Town Link Road, GECH Society Phase 3</li>
+          <li style="color:rgba(255,255,255,0.6);"><a href="islamabad.html">Islamabad:</a> 5th Floor, Feroz Center, Block D, G-6/2, Blue Area</li>
           <li style="color:rgba(255,255,255,0.6);">Multan · Bahawalpur · Faisalabad</li>
         </ul>
       </div>
@@ -789,6 +825,43 @@
   document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a||typeof gtag!=='function')return;var h=a.getAttribute('href');
     if(h.indexOf('wa.me')>-1)gtag('event','whatsapp_click',{page_location:location.href});
     else if(h.indexOf('tel:')===0)gtag('event','phone_click',{page_location:location.href});});
+})();
+</script>
+<script>
+(function(){
+  // Hero quick-quote form
+  (function(){
+    const form = document.getElementById('quickQuoteForm');
+    if(!form) return;
+    const btn = document.getElementById('qqSubmit');
+    const label = document.getElementById('qqLabel');
+    const status = document.getElementById('qqStatus');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (form.elements['_honey'] && form.elements['_honey'].value) return;
+      const name = form.elements['Full Name'].value.trim();
+      const phone = form.elements['Phone'].value.trim();
+      const email = form.elements['Email'].value.trim();
+      const phoneOk = phone.replace(/\D/g,'').length >= 10;
+      const emailOk = !email || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      if (!name || !phoneOk || !emailOk) {
+        status.textContent = !name ? 'Please enter your name.' : !phoneOk ? 'Please enter a valid phone or WhatsApp number.' : 'That email address looks incomplete.';
+        status.style.color = 'var(--red)';
+        return;
+      }
+      btn.disabled = true; const original = label.textContent; label.textContent = 'Sending…'; status.textContent = '';
+      try {
+        const res = await fetch('https://formsubmit.co/ajax/bakhtawardurranii@gmail.com', { method:'POST', headers:{'Accept':'application/json'}, body:new FormData(form) });
+        if (!res.ok) throw new Error('failed');
+        if (typeof gtag === 'function') { gtag('event','generate_lead',{form_id:'islamabad', page_location:location.href}); }
+        window.location.href = 'thank-you.html';
+      } catch (err) {
+        status.textContent = 'Something went wrong. Please call or WhatsApp 0335 2062771 and we will take your brief directly.';
+        status.style.color = 'var(--red)';
+        btn.disabled = false; label.textContent = original;
+      }
+    });
+  })();
 })();
 </script>
 </body>
