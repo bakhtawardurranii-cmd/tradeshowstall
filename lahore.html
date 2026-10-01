@@ -504,6 +504,13 @@
   .hero-form .fine a{border-bottom:1px solid rgba(20,18,39,0.3);}
   @media (max-width:520px){ .hero-form{padding:26px 20px 22px;} .hero-form .row{grid-template-columns:1fr;} }
 
+  .hero-form select{width:100%; padding:13px 14px; border:1px solid var(--line); border-radius:10px; font-family:inherit; font-size:14.5px; background:var(--paper); color:var(--ink);}
+  .hero-form select:focus{outline:2px solid var(--indigo); outline-offset:1px; background:#fff;}
+  .hero-form input[type=date]{min-height:46px; cursor:pointer;}
+  .hero-form label .count{float:right; font-weight:500; color:var(--ink-soft); font-size:11.5px;}
+  .hero-form .err{color:var(--red); font-size:12px; line-height:1.3; margin:4px 0 0; min-height:17px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .hero-form input[aria-invalid="true"], .hero-form select[aria-invalid="true"]{border-color:var(--red); background:#fff;}
+
   .chip-group{margin:0 0 26px; max-width:900px;}
   .chip-group h3{font-size:15px; font-weight:800; margin:0 0 10px; color:var(--ink);}
   .chip-list{display:flex; flex-wrap:wrap; gap:8px; margin:0; padding:0; list-style:none;}
@@ -565,19 +572,19 @@
       <p class="lead">Expo stall fabrication, exhibition stall fabrication and exhibition booth fabrication for Lahore exhibitors, built in our in-house Lahore fabrication unit with local support from design to dismantling.</p>
       <div class="actions"><a href="contact-us.html" class="btn-primary">Get a Lahore Quote <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="https://wa.me/923352062771?text=Hi%20Trade%20Show%20Stall%2C%20I%20need%20expo%20stall%20fabrication%20in%20Lahore" class="btn-ghost-dark">WhatsApp us →</a></div>
     </div>
-    <div class="reveal">
-      <form class="hero-form" id="quickQuoteForm" action="https://formsubmit.co/bakhtawardurranii@gmail.com" method="POST" novalidate>
+    <div class="reveal"><form class="hero-form" id="quickQuoteForm" action="https://formsubmit.co/bakhtawardurranii@gmail.com" method="POST" novalidate>
         <h2>Get a Lahore stall quote</h2>
         <p class="sub">Tell us your booth size and show. We will call or WhatsApp you back with a design direction.</p>
         <div class="row">
-          <div><label for="qq-name">Your name</label><input id="qq-name" type="text" name="Full Name" required autocomplete="name" placeholder="Full name"></div>
-          <div><label for="qq-phone">Phone / WhatsApp</label><input id="qq-phone" type="tel" name="Phone" required autocomplete="tel" placeholder="03XX XXXXXXX"></div>
+          <div><label for="qq-name">Your name <span class="count" data-count="Full Name">0/60</span></label><input id="qq-name" type="text" name="Full Name" required maxlength="60" minlength="2" autocomplete="name" autocapitalize="words" placeholder="Full name"><p class="err" data-err="Full Name" aria-live="polite"></p></div>
+          <div><label for="qq-phone">Phone / WhatsApp</label><input id="qq-phone" type="tel" name="Phone" required maxlength="16" inputmode="tel" autocomplete="tel" placeholder="03XX XXXXXXX"><p class="err" data-err="Phone" aria-live="polite"></p></div>
         </div>
-        <div class="row one"><div><label for="qq-email">Email (optional)</label><input id="qq-email" type="email" name="Email" autocomplete="email" placeholder="you@company.com"></div></div>
+        <div class="row one"><div><label for="qq-email">Email (optional)</label><input id="qq-email" type="email" name="Email" maxlength="100" autocomplete="email" placeholder="you@company.com"><p class="err" data-err="Email" aria-live="polite"></p></div></div>
         <div class="row">
-          <div><label for="qq-size">Booth size</label><input id="qq-size" type="text" name="Booth Size" placeholder="e.g. 6m x 3m"></div>
-          <div><label for="qq-show">Show and date</label><input id="qq-show" type="text" name="Show and Date" placeholder="e.g. Expo Centre Lahore, Nov 2026"></div>
+          <div><label for="qq-size">Booth size</label><select id="qq-size" name="Booth Size" required><option value="">Select size</option><option>3m x 3m (9 sqm)</option><option>3m x 6m (18 sqm)</option><option>6m x 6m (36 sqm)</option><option>6m x 9m or larger</option><option>Not sure yet</option></select><p class="err" data-err="Booth Size" aria-live="polite"></p></div>
+          <div><label for="qq-date">Show date (optional)</label><input id="qq-date" type="date" name="Show Date"><p class="err" data-err="Show Date" aria-live="polite"></p></div>
         </div>
+        <div class="row one"><div><label for="qq-show">Show name (optional) <span class="count" data-count="Show Name">0/80</span></label><input id="qq-show" type="text" name="Show Name" maxlength="80" placeholder="e.g. Textile Asia, PLFE"><p class="err" data-err="Show Name" aria-live="polite"></p></div></div>
         <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
         <input type="hidden" name="_subject" value="Lahore Page Quick Quote — Trade Show Stall Website">
         <input type="hidden" name="_captcha" value="false">
@@ -587,8 +594,7 @@
         <button type="submit" class="btn-primary" id="qqSubmit"><span id="qqLabel">Request my quote</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
         <p class="status" id="qqStatus" role="status" aria-live="polite"></p>
         <p class="fine">By sending this you agree to be contacted about your enquiry. See our <a href="privacy-policy.html">Privacy Policy</a>.</p>
-      </form>
-    </div>
+      </form></div>
   </section>
 
   <section class="content-section">
@@ -801,39 +807,67 @@
 </script>
 <script>
 (function(){
-  // Hero quick-quote form
-  (function(){
-    const form = document.getElementById('quickQuoteForm');
-    if(!form) return;
-    const btn = document.getElementById('qqSubmit');
-    const label = document.getElementById('qqLabel');
-    const status = document.getElementById('qqStatus');
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      if (form.elements['_honey'] && form.elements['_honey'].value) return;
-      const name = form.elements['Full Name'].value.trim();
-      const phone = form.elements['Phone'].value.trim();
-      const email = form.elements['Email'].value.trim();
-      const phoneOk = phone.replace(/\D/g,'').length >= 10;
-      const emailOk = !email || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-      if (!name || !phoneOk || !emailOk) {
-        status.textContent = !name ? 'Please enter your name.' : !phoneOk ? 'Please enter a valid phone or WhatsApp number.' : 'That email address looks incomplete.';
-        status.style.color = 'var(--red)';
-        return;
-      }
-      btn.disabled = true; const original = label.textContent; label.textContent = 'Sending…'; status.textContent = '';
-      try {
-        const res = await fetch('https://formsubmit.co/ajax/bakhtawardurranii@gmail.com', { method:'POST', headers:{'Accept':'application/json'}, body:new FormData(form) });
-        if (!res.ok) throw new Error('failed');
-        if (typeof gtag === 'function') { gtag('event','generate_lead',{form_id:'lahore', page_location:location.href}); }
-        window.location.href = 'thank-you.html';
-      } catch (err) {
-        status.textContent = 'Something went wrong. Please call or WhatsApp 0335 2062771 and we will take your brief directly.';
-        status.style.color = 'var(--red)';
-        btn.disabled = false; label.textContent = original;
-      }
-    });
-  })();
+  var form=document.getElementById('quickQuoteForm'); if(!form) return;
+  var btn=document.getElementById('qqSubmit'), label=document.getElementById('qqLabel'), status=document.getElementById('qqStatus');
+  var F=function(n){return form.elements[n];};
+  var pad=function(n){return String(n).padStart(2,'0');};
+  var iso=function(d){return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());};
+  var today=new Date(), maxD=new Date(today); maxD.setFullYear(maxD.getFullYear()+2);
+  var dateEl=F('Show Date'); dateEl.min=iso(today); dateEl.max=iso(maxD);
+  function openPicker(){ if(dateEl.showPicker){ try{dateEl.showPicker();}catch(e){} } }
+  dateEl.addEventListener('click',openPicker);
+  dateEl.addEventListener('focus',openPicker);
+  dateEl.addEventListener('paste',function(e){e.preventDefault();});
+  dateEl.addEventListener('keydown',function(e){
+    var allowed=['Tab','Shift','Escape','ArrowUp','ArrowDown','ArrowLeft','ArrowRight'];
+    if(e.key==='Backspace'||e.key==='Delete'){e.preventDefault(); dateEl.value=''; return;}
+    if(e.key==='Enter'||e.key===' '){e.preventDefault(); openPicker(); return;}
+    if(allowed.indexOf(e.key)===-1 && !e.ctrlKey && !e.metaKey) e.preventDefault();
+  });
+  var clean={
+    'Full Name':function(v){return v.replace(/[^A-Za-z\u00C0-\u024F\u0600-\u06FF .'\-]/g,'').replace(/\s{2,}/g,' ');},
+    'Phone':function(v){v=v.replace(/[^\d+\-\s]/g,''); return (v.charAt(0)==='+'?'+':'')+v.replace(/\+/g,'');},
+    'Show Name':function(v){return v.replace(/[^A-Za-z0-9\u00C0-\u024F\u0600-\u06FF .,'()&\/\-]/g,'').replace(/\s{2,}/g,' ');}
+  };
+  var limits={'Full Name':60,'Phone':16,'Email':100,'Show Name':80};
+  Object.keys(limits).forEach(function(n){F(n).maxLength=limits[n];});
+  function counter(n){var el=form.querySelector('[data-count="'+n+'"]'); if(el) el.textContent=F(n).value.length+'/'+limits[n];}
+  Object.keys(clean).forEach(function(n){
+    F(n).addEventListener('input',function(){var c=clean[n](F(n).value); if(c!==F(n).value) F(n).value=c; counter(n);});
+  });
+  var rules={
+    'Full Name':function(v){v=v.trim(); if(!v) return 'Please enter your name.'; if(v.replace(/[^A-Za-z\u00C0-\u024F\u0600-\u06FF]/g,'').length<2) return 'Use at least 2 letters.'; return '';},
+    'Phone':function(v){var d=v.replace(/[\s\-]/g,''); if(!d) return 'Please enter your number.'; if(!/^(\+92|0092|92|0)[1-9]\d{8,9}$/.test(d)) return 'Enter a valid Pakistani number.'; return '';},
+    'Email':function(v){v=v.trim(); if(!v) return ''; return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)?'':'Enter a complete email address.';},
+    'Booth Size':function(v){return v?'':'Please choose a booth size.';},
+    'Show Name':function(v){return '';},
+    'Show Date':function(v){if(!v) return ''; if(v<dateEl.min) return 'Choose today or a later date.'; if(v>dateEl.max) return 'Choose a date within 2 years.'; return '';}
+  };
+  function check(n){
+    var el=F(n), msg=rules[n](el.value), box=form.querySelector('[data-err="'+n+'"]');
+    if(box) box.textContent=msg; if(msg){el.setAttribute('aria-invalid','true');} else {el.removeAttribute('aria-invalid');}
+    return msg;
+  }
+  Object.keys(rules).forEach(function(n){ F(n).addEventListener('blur',function(){check(n);}); F(n).addEventListener('change',function(){check(n);}); });
+  ['Full Name','Show Name'].forEach(counter);
+  form.addEventListener('submit',async function(e){
+    e.preventDefault(); status.textContent='';
+    if(F('_honey').value) return;
+    F('Full Name').value=F('Full Name').value.trim().replace(/\s{2,}/g,' ');
+    F('Phone').value=F('Phone').value.replace(/[\s\-]/g,'');
+    var first=null; Object.keys(rules).forEach(function(n){ if(check(n) && !first) first=F(n); });
+    if(first){ first.focus(); status.textContent='Please fix the highlighted fields.'; status.style.color='var(--red)'; return; }
+    btn.disabled=true; var original=label.textContent; label.textContent='Sending…';
+    try{
+      var res=await fetch('https://formsubmit.co/ajax/bakhtawardurranii@gmail.com',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)});
+      if(!res.ok) throw new Error('failed');
+      if(typeof gtag==='function'){gtag('event','generate_lead',{form_id:'lahore',page_location:location.href});}
+      window.location.href='thank-you.html';
+    }catch(err){
+      status.textContent='Something went wrong. Please call or WhatsApp 0335 2062771 and we will take your brief directly.';
+      status.style.color='var(--red)'; btn.disabled=false; label.textContent=original;
+    }
+  });
 })();
 </script>
 </body>
