@@ -62,7 +62,7 @@
   "image": [
     "https://tradeshowstall.com/images/logo-trade-show-stall.webp",
     "https://tradeshowstall.com/images/exhibition-stall-textile-wood-brass-karachi.webp",
-    "https://tradeshowstall.com/images/plfe-karachi-expo-center-exhibition-stall-front-view.jpg"
+    "https://tradeshowstall.com/images/plfe-karachi-expo-center-exhibition-stall-front-view.webp"
   ],
   "telephone": "+92-335-2062771",
   "email": "projects@tradeshowstall.com",
@@ -75,6 +75,10 @@
     "addressCountry": "PK"
   },
   "hasMap": "https://share.google/cwOi6jaf3mqXK3LWE",
+    "subOrganization": [
+      {"@id": "https://tradeshowstall.com/lahore.html#localbusiness"},
+      {"@id": "https://tradeshowstall.com/islamabad.html#localbusiness"}
+    ],
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
@@ -580,6 +584,12 @@
   .footer-popular ul{display:flex; flex-wrap:wrap; gap:10px 28px;}
   .footer-popular ul li a{font-size:13px; color:rgba(255,255,255,0.6); transition:color .2s;}
   .footer-popular ul li a:hover{color:#fff;}
+
+  .faq-q{width:100%; background:none; border:0; padding:0; text-align:left; font-family:inherit;}
+  button.faq-q:focus-visible{outline:2px solid var(--indigo); outline-offset:4px; border-radius:6px;}
+  .wa-float{position:fixed; right:18px; bottom:18px; z-index:150; width:56px; height:56px; border-radius:50%; background:#1fa855; display:flex; align-items:center; justify-content:center; box-shadow:0 12px 28px rgba(20,18,39,0.28); transition:transform .25s var(--ease);}
+  .wa-float:hover{transform:scale(1.07);}
+  .wa-float svg{width:28px; height:28px; stroke:#fff; fill:none; stroke-width:2;}
 </style>
 </head>
 <body>
@@ -617,13 +627,13 @@
   <section class="hero" aria-label="Introduction">
     <div class="hero-track" id="heroTrack">
       <div class="hero-slide">
-        <img src="images/exhibition-stall-two-storey-tech-booth.webp" alt="Custom two-storey exhibition booth with meeting rooms built for a technology brand at an expo in Pakistan" width="1920" height="1071" fetchpriority="high">
+        <img src="images/exhibition-stall-two-storey-tech-booth-1200.webp" srcset="images/exhibition-stall-two-storey-tech-booth-800.webp 800w, images/exhibition-stall-two-storey-tech-booth-1200.webp 1200w, images/exhibition-stall-two-storey-tech-booth.webp 1920w" sizes="(max-width:760px) 100vw, 50vw" alt="Custom two-storey exhibition booth with meeting rooms built for a technology brand at an expo in Pakistan" width="1920" height="1071" fetchpriority="high">
       </div>
       <div class="hero-slide">
-        <img src="images/exhibition-stall-textile-wood-brass-karachi.webp" alt="Custom exhibition stall with wood and brass finishing designed for a textile brand at Expo Centre Karachi" width="1920" height="1071" loading="lazy">
+        <img src="images/exhibition-stall-textile-wood-brass-karachi-1200.webp" srcset="images/exhibition-stall-textile-wood-brass-karachi-800.webp 800w, images/exhibition-stall-textile-wood-brass-karachi-1200.webp 1200w, images/exhibition-stall-textile-wood-brass-karachi.webp 1920w" sizes="(max-width:760px) 100vw, 50vw" alt="Custom exhibition stall with wood and brass finishing designed for a textile brand at Expo Centre Karachi" width="1920" height="1071" loading="lazy">
       </div>
       <div class="hero-slide">
-        <img src="images/exhibition-stall-booth-showcase.webp" alt="Exhibition booth reception counter and display area designed and fabricated for a brand exhibiting in Pakistan" width="1920" height="1071" loading="lazy">
+        <img src="images/exhibition-stall-booth-showcase-1200.webp" srcset="images/exhibition-stall-booth-showcase-800.webp 800w, images/exhibition-stall-booth-showcase-1200.webp 1200w, images/exhibition-stall-booth-showcase.webp 1920w" sizes="(max-width:760px) 100vw, 50vw" alt="Exhibition booth reception counter and display area designed and fabricated for a brand exhibiting in Pakistan" width="1920" height="1071" loading="lazy">
       </div>
     </div>
 
@@ -731,7 +741,7 @@
 
       <div class="portfolio-grid">
         <div class="proof-card reveal">
-          <img src="images/exhibition-stall-two-storey-tech-booth.webp" width="1920" height="1071" alt="Two-storey exhibition booth with spiral staircase and glass meeting rooms built for a technology exhibitor" loading="lazy">
+          <img src="images/exhibition-stall-two-storey-tech-booth-1200.webp" srcset="images/exhibition-stall-two-storey-tech-booth-800.webp 800w, images/exhibition-stall-two-storey-tech-booth-1200.webp 1200w, images/exhibition-stall-two-storey-tech-booth.webp 1920w" sizes="(max-width:760px) 100vw, 50vw" width="1920" height="1071" alt="Two-storey exhibition booth with spiral staircase and glass meeting rooms built for a technology exhibitor" loading="lazy">
           <div class="cap">
             <span class="kicker">Technology · Double-decker</span>
             <h4>Two-Storey Booth With Private Meeting Rooms</h4>
@@ -739,14 +749,14 @@
         </div>
         <div class="stack">
           <div class="proof-card reveal">
-            <img src="images/exhibition-stall-textile-wood-brass-karachi.webp" width="1920" height="1071" alt="Custom exhibition stall with wood and brass finishing designed for a textile brand at Expo Centre Karachi" loading="lazy">
+            <img src="images/exhibition-stall-textile-wood-brass-karachi-1200.webp" srcset="images/exhibition-stall-textile-wood-brass-karachi-800.webp 800w, images/exhibition-stall-textile-wood-brass-karachi-1200.webp 1200w, images/exhibition-stall-textile-wood-brass-karachi.webp 1920w" sizes="(max-width:760px) 100vw, 50vw" width="1920" height="1071" alt="Custom exhibition stall with wood and brass finishing designed for a textile brand at Expo Centre Karachi" loading="lazy">
             <div class="cap">
               <span class="kicker">Textiles · Karachi</span>
               <h4>Wood &amp; Brass Retail-Style Booth</h4>
             </div>
           </div>
           <div class="proof-card reveal">
-            <img src="images/exhibition-stall-booth-showcase.webp" width="1920" height="1071" alt="Curved reception counter and product display booth designed for a brand exhibiting in Pakistan" loading="lazy">
+            <img src="images/exhibition-stall-booth-showcase-1200.webp" srcset="images/exhibition-stall-booth-showcase-800.webp 800w, images/exhibition-stall-booth-showcase-1200.webp 1200w, images/exhibition-stall-booth-showcase.webp 1920w" sizes="(max-width:760px) 100vw, 50vw" width="1920" height="1071" alt="Curved reception counter and product display booth designed for a brand exhibiting in Pakistan" loading="lazy">
             <div class="cap">
               <span class="kicker">Consumer goods</span>
               <h4>Curved Reception &amp; Display Counter</h4>
@@ -808,17 +818,17 @@
           <p>Booths built for government-facing and corporate exhibitors showing at the Pak-China Friendship Centre.</p>
           <span class="venue">Pak-China Friendship Centre</span>
         </a>
-        <a href="multan.html" class="loc-card reveal">
+        <a href="exhibition-stall-builders-punjab.html#multan" class="loc-card reveal">
           <div class="city-top"><h3>Multan</h3><span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s7-6.6 7-11a7 7 0 10-14 0c0 4.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span></div>
           <p>Support for agricultural and trade fairs, fabricated at our Karachi office and transported to Multan by our own crew.</p>
           <span class="venue">Multan trade fairs</span>
         </a>
-        <a href="bahawalpur.html" class="loc-card reveal">
+        <a href="exhibition-stall-builders-punjab.html#bahawalpur" class="loc-card reveal">
           <div class="city-top"><h3>Bahawalpur</h3><span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s7-6.6 7-11a7 7 0 10-14 0c0 4.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span></div>
           <p>Custom stalls for regional exhibitors, fabricated at our Karachi office and transported to South Punjab agri and seasonal expos.</p>
           <span class="venue">South Punjab expos</span>
         </a>
-        <a href="faisalabad.html" class="loc-card reveal">
+        <a href="exhibition-stall-builders-punjab.html#faisalabad" class="loc-card reveal">
           <div class="city-top"><h3>Faisalabad</h3><span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s7-6.6 7-11a7 7 0 10-14 0c0 4.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span></div>
           <p>Booths for textile and manufacturing exhibitors, fabricated at our Karachi office and transported to Faisalabad's industrial expos.</p>
           <span class="venue">Textile &amp; manufacturing expos</span>
@@ -873,23 +883,23 @@
       </div>
       <div class="faq-list reveal" id="faqList">
         <div class="faq-item open">
-          <div class="faq-q"><span>Which cities in Pakistan do you build exhibition stalls in?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="true"><span>Which cities in Pakistan do you build exhibition stalls in?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>We're headquartered at a single office in Karachi and deliver nationwide from there. Karachi, Lahore and Islamabad are our primary markets, where our own crews handle on-site installation directly. For Multan, Bahawalpur and Faisalabad, stalls are fabricated at the Karachi office, transported to the venue, and installed by our in-house crew — not a local subcontractor.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><span>Do you handle exhibition stall design and fabrication in-house, or outsource them?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="false"><span>Do you handle exhibition stall design and fabrication in-house, or outsource them?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>Design, fabrication and installation are all handled by the same in-house team, so exhibitors don't have to coordinate separately with a design studio, a fabrication workshop and an installation contractor.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><span>How much does an exhibition stall cost in Pakistan?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="false"><span>How much does an exhibition stall cost in Pakistan?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>Cost depends on stall size, materials, structural complexity and city. A detailed breakdown of <a href="exhibition-stall-cost-pakistan.html" class="inline-link" style="color:var(--indigo-deep); font-weight:700;">exhibition stall cost in Pakistan</a> is on our cost guide — share your booth size and venue through our contact page for a specific quote.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><span>Can you provide a custom exhibition stall design, or only modular systems?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="false"><span>Can you provide a custom exhibition stall design, or only modular systems?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>Both. We design and fabricate fully custom stalls for flagship activations, and reconfigurable modular systems for brands that exhibit at multiple shows through the year.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><span>How far in advance should I book an exhibition stall build?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="false"><span>How far in advance should I book an exhibition stall build?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>Standard stalls typically need 3–4 weeks' notice. Multi-storey or heavily custom builds are better booked 6–8 weeks ahead, since design approval and structural fabrication take longer than a standard build.</p></div>
         </div>
       </div>
@@ -939,7 +949,13 @@
           <li><a href="exhibition-branding.html">Branding</a></li>
           <li><a href="custom-6x3-island-booth.html">6x3 Island Booth</a></li>
           <li><a href="exhibition-stall-cost-pakistan.html">Cost Guide</a></li>
-        </ul>
+        
+        <li><a href="exhibition-stall-cost-karachi.html">Exhibition Stall Cost in Karachi</a></li>
+        <li><a href="expo-centre-karachi-exhibitor-guide.html">Expo Centre Karachi Exhibitor Guide</a></li>
+        <li><a href="karachi-exhibitions-2026-2027.html">Karachi Exhibitions 2026–2027</a></li>
+        <li><a href="custom-vs-modular-exhibition-stalls.html">Custom vs Modular Stalls</a></li>
+        <li><a href="exhibition-stall-builders-punjab.html">Stall Builders in Multan, Faisalabad &amp; Bahawalpur</a></li>
+      </ul>
       </div>
 
       <div class="fcol">
@@ -948,9 +964,9 @@
           <li><a href="karachi.html">Karachi</a></li>
           <li><a href="lahore.html">Lahore</a></li>
           <li><a href="islamabad.html">Islamabad</a></li>
-          <li><a href="multan.html">Multan</a></li>
-          <li><a href="bahawalpur.html">Bahawalpur</a></li>
-          <li><a href="faisalabad.html">Faisalabad</a></li>
+          <li><a href="exhibition-stall-builders-punjab.html#multan">Multan</a></li>
+          <li><a href="exhibition-stall-builders-punjab.html#bahawalpur">Bahawalpur</a></li>
+          <li><a href="exhibition-stall-builders-punjab.html#faisalabad">Faisalabad</a></li>
         </ul>
       </div>
 
@@ -998,6 +1014,8 @@
   </div>
   <div class="footer-mark" aria-hidden="true">Trade Show Stall</div>
 </footer>
+
+<a href="https://wa.me/923352062771?text=Hi%20Trade%20Show%20Stall%2C%20I%20need%20an%20exhibition%20stall." class="wa-float" target="_blank" rel="noopener" aria-label="Chat with Trade Show Stall on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.7-5A8.5 8.5 0 1 1 21 11.5z"/></svg></a>
 
 <script>
   // Sticky nav shadow state
@@ -1060,5 +1078,13 @@
   });
 </script>
 
+<script data-wa-track>
+(function(){
+  document.querySelectorAll('.faq-item').forEach(function(i){var b=i.querySelector('.faq-q');if(!b)return;new MutationObserver(function(){b.setAttribute('aria-expanded',i.classList.contains('open')?'true':'false');}).observe(i,{attributes:true,attributeFilter:['class']});});
+  document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a||typeof gtag!=='function')return;var h=a.getAttribute('href');
+    if(h.indexOf('wa.me')>-1)gtag('event','whatsapp_click',{page_location:location.href});
+    else if(h.indexOf('tel:')===0)gtag('event','phone_click',{page_location:location.href});});
+})();
+</script>
 </body>
 </html>

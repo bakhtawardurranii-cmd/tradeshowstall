@@ -333,6 +333,12 @@
   .footer-popular ul{display:flex; flex-wrap:wrap; gap:10px 28px;}
   .footer-popular ul li a{font-size:13px; color:rgba(255,255,255,0.6); transition:color .2s;}
   .footer-popular ul li a:hover{color:#fff;}
+
+  .faq-q{width:100%; background:none; border:0; padding:0; text-align:left; font-family:inherit;}
+  button.faq-q:focus-visible{outline:2px solid var(--indigo); outline-offset:4px; border-radius:6px;}
+  .wa-float{position:fixed; right:18px; bottom:18px; z-index:150; width:56px; height:56px; border-radius:50%; background:#1fa855; display:flex; align-items:center; justify-content:center; box-shadow:0 12px 28px rgba(20,18,39,0.28); transition:transform .25s var(--ease);}
+  .wa-float:hover{transform:scale(1.07);}
+  .wa-float svg{width:28px; height:28px; stroke:#fff; fill:none; stroke-width:2;}
 </style>
 </head>
 <body>
@@ -383,7 +389,7 @@
       </div>
     </div>
     <div class="page-header-media reveal">
-      <img src="images/exhibition-stall-booth-showcase.webp" alt="Exhibition booth reception counter installed on-site for a brand exhibiting in Pakistan" width="900" height="700">
+      <img src="images/exhibition-stall-booth-showcase-1200.webp" srcset="images/exhibition-stall-booth-showcase-800.webp 800w, images/exhibition-stall-booth-showcase-1200.webp 1200w, images/exhibition-stall-booth-showcase.webp 1920w" sizes="(max-width:760px) 100vw, 50vw" alt="Exhibition booth reception counter installed on-site for a brand exhibiting in Pakistan" width="900" height="700">
       <span class="tag">Consumer goods</span>
     </div>
   </section>
@@ -392,7 +398,7 @@
   <section class="content-section alt">
     <div class="wrap content-grid">
       <div class="content-media reveal">
-        <img src="images/exhibition-stall-booth-showcase.webp" width="1920" height="1071" alt="Delivery &amp; On-Site Assembly — exhibition stall work by Trade Show Stall" loading="lazy">
+        <img src="images/exhibition-stall-booth-showcase-1200.webp" srcset="images/exhibition-stall-booth-showcase-800.webp 800w, images/exhibition-stall-booth-showcase-1200.webp 1200w, images/exhibition-stall-booth-showcase.webp 1920w" sizes="(max-width:760px) 100vw, 50vw" width="1920" height="1071" alt="Delivery &amp; On-Site Assembly — exhibition stall work by Trade Show Stall" loading="lazy">
       </div>
       <div class="content-text reveal">
         <h2>Delivery &amp; On-Site Assembly</h2>
@@ -422,7 +428,7 @@
   <section class="content-section">
     <div class="wrap content-grid reverse">
       <div class="content-media reveal">
-        <img src="images/exhibition-stall-two-storey-tech-booth.webp" width="1920" height="1071" alt="Two-Storey &amp; Complex Structural Builds — exhibition stall work by Trade Show Stall" loading="lazy">
+        <img src="images/exhibition-stall-two-storey-tech-booth-1200.webp" srcset="images/exhibition-stall-two-storey-tech-booth-800.webp 800w, images/exhibition-stall-two-storey-tech-booth-1200.webp 1200w, images/exhibition-stall-two-storey-tech-booth.webp 1920w" sizes="(max-width:760px) 100vw, 50vw" width="1920" height="1071" alt="Two-Storey &amp; Complex Structural Builds — exhibition stall work by Trade Show Stall" loading="lazy">
       </div>
       <div class="content-text reveal">
         <h2>Two-Storey &amp; Complex Structural Builds</h2>
@@ -452,7 +458,13 @@
             <li>Transport of the stall to the venue</li>
             <li>On-site assembly within the venue's move-in window</li>
             <li>Dismantling and removal after the show closes</li>
-          </ul>
+          
+        <li><a href="exhibition-stall-cost-karachi.html">Exhibition Stall Cost in Karachi</a></li>
+        <li><a href="expo-centre-karachi-exhibitor-guide.html">Expo Centre Karachi Exhibitor Guide</a></li>
+        <li><a href="karachi-exhibitions-2026-2027.html">Karachi Exhibitions 2026–2027</a></li>
+        <li><a href="custom-vs-modular-exhibition-stalls.html">Custom vs Modular Stalls</a></li>
+        <li><a href="exhibition-stall-builders-punjab.html">Stall Builders in Multan, Faisalabad &amp; Bahawalpur</a></li>
+      </ul>
         </div>
       </div>
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-bottom:32px;">
@@ -490,19 +502,19 @@
       </div>
       <div class="faq-list reveal" id="faqList">
         <div class="faq-item open">
-          <div class="faq-q"><span>How far in advance do you need the installation schedule confirmed?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="true"><span>How far in advance do you need the installation schedule confirmed?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>Ideally 3–4 weeks before the show for standard stalls, and 6–8 weeks for multi-storey or structurally complex builds, so hall access and crew scheduling can be locked in.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><span>Do you handle dismantling and removal after the show ends?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="false"><span>Do you handle dismantling and removal after the show ends?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>Yes — dismantling and removal from the hall are included as standard, scheduled within the venue's move-out window.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><span>What happens if the venue only allows overnight installation?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="false"><span>What happens if the venue only allows overnight installation?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>We plan the build sequence around whatever access window the venue grants, including overnight-only installs where that's the venue's policy.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><span>Can your crews install a stall we fabricated elsewhere?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="false"><span>Can your crews install a stall we fabricated elsewhere?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>In most cases yes, provided we can review the structure and assembly instructions beforehand to plan the on-site sequence properly.</p></div>
         </div>
       </div>
@@ -557,9 +569,9 @@
           <li><a href="karachi.html">Karachi</a></li>
           <li><a href="lahore.html">Lahore</a></li>
           <li><a href="islamabad.html">Islamabad</a></li>
-          <li><a href="multan.html">Multan</a></li>
-          <li><a href="bahawalpur.html">Bahawalpur</a></li>
-          <li><a href="faisalabad.html">Faisalabad</a></li>
+          <li><a href="exhibition-stall-builders-punjab.html#multan">Multan</a></li>
+          <li><a href="exhibition-stall-builders-punjab.html#bahawalpur">Bahawalpur</a></li>
+          <li><a href="exhibition-stall-builders-punjab.html#faisalabad">Faisalabad</a></li>
         </ul>
       </div>
       <div class="fcol">
@@ -605,6 +617,8 @@
   <div class="footer-mark" aria-hidden="true">Trade Show Stall</div>
 </footer>
 
+<a href="https://wa.me/923352062771?text=Hi%20Trade%20Show%20Stall%2C%20I%20need%20an%20exhibition%20stall." class="wa-float" target="_blank" rel="noopener" aria-label="Chat with Trade Show Stall on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.7-5A8.5 8.5 0 1 1 21 11.5z"/></svg></a>
+
 <script>
   const toggle = document.getElementById('navToggle');
   const links = document.getElementById('navLinks');
@@ -640,5 +654,13 @@
   });
 </script>
 
+<script data-wa-track>
+(function(){
+  document.querySelectorAll('.faq-item').forEach(function(i){var b=i.querySelector('.faq-q');if(!b)return;new MutationObserver(function(){b.setAttribute('aria-expanded',i.classList.contains('open')?'true':'false');}).observe(i,{attributes:true,attributeFilter:['class']});});
+  document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a||typeof gtag!=='function')return;var h=a.getAttribute('href');
+    if(h.indexOf('wa.me')>-1)gtag('event','whatsapp_click',{page_location:location.href});
+    else if(h.indexOf('tel:')===0)gtag('event','phone_click',{page_location:location.href});});
+})();
+</script>
 </body>
 </html>

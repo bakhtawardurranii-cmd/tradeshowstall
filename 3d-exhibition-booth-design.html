@@ -333,6 +333,12 @@
   .footer-popular ul{display:flex; flex-wrap:wrap; gap:10px 28px;}
   .footer-popular ul li a{font-size:13px; color:rgba(255,255,255,0.6); transition:color .2s;}
   .footer-popular ul li a:hover{color:#fff;}
+
+  .faq-q{width:100%; background:none; border:0; padding:0; text-align:left; font-family:inherit;}
+  button.faq-q:focus-visible{outline:2px solid var(--indigo); outline-offset:4px; border-radius:6px;}
+  .wa-float{position:fixed; right:18px; bottom:18px; z-index:150; width:56px; height:56px; border-radius:50%; background:#1fa855; display:flex; align-items:center; justify-content:center; box-shadow:0 12px 28px rgba(20,18,39,0.28); transition:transform .25s var(--ease);}
+  .wa-float:hover{transform:scale(1.07);}
+  .wa-float svg{width:28px; height:28px; stroke:#fff; fill:none; stroke-width:2;}
 </style>
 </head>
 <body>
@@ -383,7 +389,7 @@
       </div>
     </div>
     <div class="page-header-media reveal">
-      <img src="images/exhibition-stall-two-storey-tech-booth.webp" alt="Two-storey exhibition booth rendered and built with glass meeting rooms and a spiral staircase" width="900" height="700">
+      <img src="images/exhibition-stall-two-storey-tech-booth-1200.webp" srcset="images/exhibition-stall-two-storey-tech-booth-800.webp 800w, images/exhibition-stall-two-storey-tech-booth-1200.webp 1200w, images/exhibition-stall-two-storey-tech-booth.webp 1920w" sizes="(max-width:760px) 100vw, 50vw" alt="Two-storey exhibition booth rendered and built with glass meeting rooms and a spiral staircase" width="900" height="700">
       <span class="tag">Technology · Double-decker</span>
     </div>
   </section>
@@ -392,7 +398,7 @@
   <section class="content-section alt">
     <div class="wrap content-grid">
       <div class="content-media reveal">
-        <img src="images/exhibition-stall-two-storey-tech-booth.webp" width="1920" height="1071" alt="What a 3D Exhibition Booth Render Actually Shows — exhibition stall work by Trade Show Stall" loading="lazy">
+        <img src="images/exhibition-stall-two-storey-tech-booth-1200.webp" srcset="images/exhibition-stall-two-storey-tech-booth-800.webp 800w, images/exhibition-stall-two-storey-tech-booth-1200.webp 1200w, images/exhibition-stall-two-storey-tech-booth.webp 1920w" sizes="(max-width:760px) 100vw, 50vw" width="1920" height="1071" alt="What a 3D Exhibition Booth Render Actually Shows — exhibition stall work by Trade Show Stall" loading="lazy">
       </div>
       <div class="content-text reveal">
         <h2>What a 3D Exhibition Booth Render Actually Shows</h2>
@@ -406,7 +412,7 @@
   <section class="content-section">
     <div class="wrap content-grid reverse">
       <div class="content-media reveal">
-        <img src="images/exhibition-stall-booth-showcase.webp" width="1920" height="1071" alt="Why Renders Matter More Than Drawings — exhibition stall work by Trade Show Stall" loading="lazy">
+        <img src="images/exhibition-stall-booth-showcase-1200.webp" srcset="images/exhibition-stall-booth-showcase-800.webp 800w, images/exhibition-stall-booth-showcase-1200.webp 1200w, images/exhibition-stall-booth-showcase.webp 1920w" sizes="(max-width:760px) 100vw, 50vw" width="1920" height="1071" alt="Why Renders Matter More Than Drawings — exhibition stall work by Trade Show Stall" loading="lazy">
       </div>
       <div class="content-text reveal">
         <h2>Why Renders Matter More Than Drawings</h2>
@@ -435,7 +441,7 @@
   <section class="content-section alt">
     <div class="wrap content-grid">
       <div class="content-media reveal">
-        <img src="images/exhibition-stall-textile-wood-brass-karachi.webp" width="1920" height="1071" alt="Revisions Before Anything Is Fabricated — exhibition stall work by Trade Show Stall" loading="lazy">
+        <img src="images/exhibition-stall-textile-wood-brass-karachi-1200.webp" srcset="images/exhibition-stall-textile-wood-brass-karachi-800.webp 800w, images/exhibition-stall-textile-wood-brass-karachi-1200.webp 1200w, images/exhibition-stall-textile-wood-brass-karachi.webp 1920w" sizes="(max-width:760px) 100vw, 50vw" width="1920" height="1071" alt="Revisions Before Anything Is Fabricated — exhibition stall work by Trade Show Stall" loading="lazy">
       </div>
       <div class="content-text reveal">
         <h2>Revisions Before Anything Is Fabricated</h2>
@@ -465,7 +471,13 @@
             <li>Floor plan and layout options for your booth space</li>
             <li>Photorealistic 3D renders showing materials, lighting and branding</li>
             <li>Revision rounds until the concept is approved</li>
-          </ul>
+          
+        <li><a href="exhibition-stall-cost-karachi.html">Exhibition Stall Cost in Karachi</a></li>
+        <li><a href="expo-centre-karachi-exhibitor-guide.html">Expo Centre Karachi Exhibitor Guide</a></li>
+        <li><a href="karachi-exhibitions-2026-2027.html">Karachi Exhibitions 2026–2027</a></li>
+        <li><a href="custom-vs-modular-exhibition-stalls.html">Custom vs Modular Stalls</a></li>
+        <li><a href="exhibition-stall-builders-punjab.html">Stall Builders in Multan, Faisalabad &amp; Bahawalpur</a></li>
+      </ul>
         </div>
       </div>
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-bottom:32px;">
@@ -518,19 +530,19 @@
       </div>
       <div class="faq-list reveal" id="faqList">
         <div class="faq-item open">
-          <div class="faq-q"><span>How long does a 3D exhibition booth render take?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="true"><span>How long does a 3D exhibition booth render take?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>A first concept render is typically ready within 5–7 days of the floor plan being locked. Revisions after that usually turn around in 2–3 days each.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><span>Can I request changes after seeing the first render?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="false"><span>Can I request changes after seeing the first render?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>Yes — two rounds of revisions are included as standard, covering material swaps, layout adjustments and branding changes.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><span>Does the final stall look exactly like the render?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="false"><span>Does the final stall look exactly like the render?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>Fabrication is built directly from the approved render's materials and dimensions, so the finished stall matches closely. Minor variation in lighting conditions between venues is normal.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><span>Do you charge separately for 3D design?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="false"><span>Do you charge separately for 3D design?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>For most projects, 3D concept design is included as part of the overall design-to-installation package. Standalone render requests are quoted separately — ask when you share your brief.</p></div>
         </div>
       </div>
@@ -585,9 +597,9 @@
           <li><a href="karachi.html">Karachi</a></li>
           <li><a href="lahore.html">Lahore</a></li>
           <li><a href="islamabad.html">Islamabad</a></li>
-          <li><a href="multan.html">Multan</a></li>
-          <li><a href="bahawalpur.html">Bahawalpur</a></li>
-          <li><a href="faisalabad.html">Faisalabad</a></li>
+          <li><a href="exhibition-stall-builders-punjab.html#multan">Multan</a></li>
+          <li><a href="exhibition-stall-builders-punjab.html#bahawalpur">Bahawalpur</a></li>
+          <li><a href="exhibition-stall-builders-punjab.html#faisalabad">Faisalabad</a></li>
         </ul>
       </div>
       <div class="fcol">
@@ -633,6 +645,8 @@
   <div class="footer-mark" aria-hidden="true">Trade Show Stall</div>
 </footer>
 
+<a href="https://wa.me/923352062771?text=Hi%20Trade%20Show%20Stall%2C%20I%20need%20an%20exhibition%20stall." class="wa-float" target="_blank" rel="noopener" aria-label="Chat with Trade Show Stall on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.7-5A8.5 8.5 0 1 1 21 11.5z"/></svg></a>
+
 <script>
   const toggle = document.getElementById('navToggle');
   const links = document.getElementById('navLinks');
@@ -668,5 +682,13 @@
   });
 </script>
 
+<script data-wa-track>
+(function(){
+  document.querySelectorAll('.faq-item').forEach(function(i){var b=i.querySelector('.faq-q');if(!b)return;new MutationObserver(function(){b.setAttribute('aria-expanded',i.classList.contains('open')?'true':'false');}).observe(i,{attributes:true,attributeFilter:['class']});});
+  document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a||typeof gtag!=='function')return;var h=a.getAttribute('href');
+    if(h.indexOf('wa.me')>-1)gtag('event','whatsapp_click',{page_location:location.href});
+    else if(h.indexOf('tel:')===0)gtag('event','phone_click',{page_location:location.href});});
+})();
+</script>
 </body>
 </html>

@@ -333,6 +333,12 @@
   .footer-popular ul{display:flex; flex-wrap:wrap; gap:10px 28px;}
   .footer-popular ul li a{font-size:13px; color:rgba(255,255,255,0.6); transition:color .2s;}
   .footer-popular ul li a:hover{color:#fff;}
+
+  .faq-q{width:100%; background:none; border:0; padding:0; text-align:left; font-family:inherit;}
+  button.faq-q:focus-visible{outline:2px solid var(--indigo); outline-offset:4px; border-radius:6px;}
+  .wa-float{position:fixed; right:18px; bottom:18px; z-index:150; width:56px; height:56px; border-radius:50%; background:#1fa855; display:flex; align-items:center; justify-content:center; box-shadow:0 12px 28px rgba(20,18,39,0.28); transition:transform .25s var(--ease);}
+  .wa-float:hover{transform:scale(1.07);}
+  .wa-float svg{width:28px; height:28px; stroke:#fff; fill:none; stroke-width:2;}
 </style>
 </head>
 <body>
@@ -383,7 +389,7 @@
       </div>
     </div>
     <div class="page-header-media reveal">
-      <img src="images/exhibition-stall-textile-wood-brass-karachi.webp" alt="Exhibition stall branding and product display for a textile brand at Expo Centre Karachi" width="900" height="700">
+      <img src="images/exhibition-stall-textile-wood-brass-karachi-1200.webp" srcset="images/exhibition-stall-textile-wood-brass-karachi-800.webp 800w, images/exhibition-stall-textile-wood-brass-karachi-1200.webp 1200w, images/exhibition-stall-textile-wood-brass-karachi.webp 1920w" sizes="(max-width:760px) 100vw, 50vw" alt="Exhibition stall branding and product display for a textile brand at Expo Centre Karachi" width="900" height="700">
       <span class="tag">Textiles · Karachi</span>
     </div>
   </section>
@@ -392,7 +398,7 @@
   <section class="content-section alt">
     <div class="wrap content-grid">
       <div class="content-media reveal">
-        <img src="images/exhibition-stall-textile-wood-brass-karachi.webp" width="1920" height="1071" alt="Backdrops, Signage &amp; Product Displays — exhibition stall work by Trade Show Stall" loading="lazy">
+        <img src="images/exhibition-stall-textile-wood-brass-karachi-1200.webp" srcset="images/exhibition-stall-textile-wood-brass-karachi-800.webp 800w, images/exhibition-stall-textile-wood-brass-karachi-1200.webp 1200w, images/exhibition-stall-textile-wood-brass-karachi.webp 1920w" sizes="(max-width:760px) 100vw, 50vw" width="1920" height="1071" alt="Backdrops, Signage &amp; Product Displays — exhibition stall work by Trade Show Stall" loading="lazy">
       </div>
       <div class="content-text reveal">
         <h2>Backdrops, Signage &amp; Product Displays</h2>
@@ -406,7 +412,7 @@
   <section class="content-section">
     <div class="wrap content-grid reverse">
       <div class="content-media reveal">
-        <img src="images/exhibition-stall-two-storey-tech-booth.webp" width="1920" height="1071" alt="Wayfinding Inside Larger Booths — exhibition stall work by Trade Show Stall" loading="lazy">
+        <img src="images/exhibition-stall-two-storey-tech-booth-1200.webp" srcset="images/exhibition-stall-two-storey-tech-booth-800.webp 800w, images/exhibition-stall-two-storey-tech-booth-1200.webp 1200w, images/exhibition-stall-two-storey-tech-booth.webp 1920w" sizes="(max-width:760px) 100vw, 50vw" width="1920" height="1071" alt="Wayfinding Inside Larger Booths — exhibition stall work by Trade Show Stall" loading="lazy">
       </div>
       <div class="content-text reveal">
         <h2>Wayfinding Inside Larger Booths</h2>
@@ -451,7 +457,13 @@
             <li>Backdrops and feature wall graphics sized to the approved design</li>
             <li>Product and display signage positioned within the floor plan</li>
             <li>Wayfinding for multi-zone or multi-storey booths</li>
-          </ul>
+          
+        <li><a href="exhibition-stall-cost-karachi.html">Exhibition Stall Cost in Karachi</a></li>
+        <li><a href="expo-centre-karachi-exhibitor-guide.html">Expo Centre Karachi Exhibitor Guide</a></li>
+        <li><a href="karachi-exhibitions-2026-2027.html">Karachi Exhibitions 2026–2027</a></li>
+        <li><a href="custom-vs-modular-exhibition-stalls.html">Custom vs Modular Stalls</a></li>
+        <li><a href="exhibition-stall-builders-punjab.html">Stall Builders in Multan, Faisalabad &amp; Bahawalpur</a></li>
+      </ul>
         </div>
       </div>
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-bottom:32px;">
@@ -489,19 +501,19 @@
       </div>
       <div class="faq-list reveal" id="faqList">
         <div class="faq-item open">
-          <div class="faq-q"><span>Can you produce branding for a stall you didn't fabricate?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="true"><span>Can you produce branding for a stall you didn't fabricate?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>Yes, though we'll need accurate dimensions and material references for the existing structure to make sure graphics and signage fit correctly.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><span>How far in advance do you need final brand assets?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="false"><span>How far in advance do you need final brand assets?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>Ideally 2–3 weeks before installation, to allow time for print production and any on-site mounting hardware to be fabricated alongside the stall.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><span>Do you handle both print and digital signage?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="false"><span>Do you handle both print and digital signage?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>Yes — printed backdrops and graphics alongside screen-based signage where a booth's design calls for it.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><span>Can branding be updated for a stall we're reusing next year?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="false"><span>Can branding be updated for a stall we're reusing next year?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>Yes, this is common with modular systems — the frame stays, and graphics panels are reproduced with updated branding or campaign messaging.</p></div>
         </div>
       </div>
@@ -556,9 +568,9 @@
           <li><a href="karachi.html">Karachi</a></li>
           <li><a href="lahore.html">Lahore</a></li>
           <li><a href="islamabad.html">Islamabad</a></li>
-          <li><a href="multan.html">Multan</a></li>
-          <li><a href="bahawalpur.html">Bahawalpur</a></li>
-          <li><a href="faisalabad.html">Faisalabad</a></li>
+          <li><a href="exhibition-stall-builders-punjab.html#multan">Multan</a></li>
+          <li><a href="exhibition-stall-builders-punjab.html#bahawalpur">Bahawalpur</a></li>
+          <li><a href="exhibition-stall-builders-punjab.html#faisalabad">Faisalabad</a></li>
         </ul>
       </div>
       <div class="fcol">
@@ -604,6 +616,8 @@
   <div class="footer-mark" aria-hidden="true">Trade Show Stall</div>
 </footer>
 
+<a href="https://wa.me/923352062771?text=Hi%20Trade%20Show%20Stall%2C%20I%20need%20an%20exhibition%20stall." class="wa-float" target="_blank" rel="noopener" aria-label="Chat with Trade Show Stall on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.7-5A8.5 8.5 0 1 1 21 11.5z"/></svg></a>
+
 <script>
   const toggle = document.getElementById('navToggle');
   const links = document.getElementById('navLinks');
@@ -639,5 +653,13 @@
   });
 </script>
 
+<script data-wa-track>
+(function(){
+  document.querySelectorAll('.faq-item').forEach(function(i){var b=i.querySelector('.faq-q');if(!b)return;new MutationObserver(function(){b.setAttribute('aria-expanded',i.classList.contains('open')?'true':'false');}).observe(i,{attributes:true,attributeFilter:['class']});});
+  document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a||typeof gtag!=='function')return;var h=a.getAttribute('href');
+    if(h.indexOf('wa.me')>-1)gtag('event','whatsapp_click',{page_location:location.href});
+    else if(h.indexOf('tel:')===0)gtag('event','phone_click',{page_location:location.href});});
+})();
+</script>
 </body>
 </html>

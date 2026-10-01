@@ -297,6 +297,12 @@
   .footer-popular ul{display:flex; flex-wrap:wrap; gap:10px 28px;}
   .footer-popular ul li a{font-size:13px; color:rgba(255,255,255,0.6); transition:color .2s;}
   .footer-popular ul li a:hover{color:#fff;}
+
+  .faq-q{width:100%; background:none; border:0; padding:0; text-align:left; font-family:inherit;}
+  button.faq-q:focus-visible{outline:2px solid var(--indigo); outline-offset:4px; border-radius:6px;}
+  .wa-float{position:fixed; right:18px; bottom:18px; z-index:150; width:56px; height:56px; border-radius:50%; background:#1fa855; display:flex; align-items:center; justify-content:center; box-shadow:0 12px 28px rgba(20,18,39,0.28); transition:transform .25s var(--ease);}
+  .wa-float:hover{transform:scale(1.07);}
+  .wa-float svg{width:28px; height:28px; stroke:#fff; fill:none; stroke-width:2;}
 </style>
 </head>
 <body>
@@ -352,7 +358,7 @@
       </div>
     </div>
     <div class="page-header-media reveal">
-      <img src="images/exhibition-stall-booth-showcase.webp" alt="Custom 6x3 island exhibition booth with reception counter and open display area" width="900" height="700">
+      <img src="images/exhibition-stall-booth-showcase-1200.webp" srcset="images/exhibition-stall-booth-showcase-800.webp 800w, images/exhibition-stall-booth-showcase-1200.webp 1200w, images/exhibition-stall-booth-showcase.webp 1920w" sizes="(max-width:760px) 100vw, 50vw" alt="Custom 6x3 island exhibition booth with reception counter and open display area" width="900" height="700">
       <span class="tag">Island format</span>
     </div>
   </section>
@@ -398,6 +404,12 @@
         <li>Delivery from our Karachi office to your venue</li>
         <li>On-site installation within the venue's move-in window</li>
         <li>Dismantling and removal after the show closes</li>
+      
+        <li><a href="exhibition-stall-cost-karachi.html">Exhibition Stall Cost in Karachi</a></li>
+        <li><a href="expo-centre-karachi-exhibitor-guide.html">Expo Centre Karachi Exhibitor Guide</a></li>
+        <li><a href="karachi-exhibitions-2026-2027.html">Karachi Exhibitions 2026–2027</a></li>
+        <li><a href="custom-vs-modular-exhibition-stalls.html">Custom vs Modular Stalls</a></li>
+        <li><a href="exhibition-stall-builders-punjab.html">Stall Builders in Multan, Faisalabad &amp; Bahawalpur</a></li>
       </ul>
       <p style="max-width:720px; margin:20px 0 0; font-size:13.5px; color:var(--ink-soft);">Not included: custom AV/screen integration, premium finishes (veneer, brass detailing) and multi-day storage between shows — available as add-ons, priced separately based on your brief.</p>
     </div>
@@ -438,23 +450,23 @@
       </div>
       <div class="faq-list reveal" id="faqList">
         <div class="faq-item open">
-          <div class="faq-q"><span>How much does the Custom 6x3 Island Booth cost?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="true"><span>How much does the Custom 6x3 Island Booth cost?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>Starting from PKR 220,000. Final pricing depends on material upgrades, branding complexity and venue logistics in your city — confirmed after a short consultation.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><span>Is this booth available in Karachi, Lahore and Islamabad?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="false"><span>Is this booth available in Karachi, Lahore and Islamabad?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>Yes — this package is built and installed in all three cities, with local crews handling delivery and installation at Karachi Expo Center, Expo Centre Lahore and Pak-China Friendship Centre Islamabad.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><span>What is included in the price?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="false"><span>What is included in the price?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>Structure and flooring, a reception counter, branding/signage panel, a standard lighting package, delivery to your venue, on-site installation and dismantling after the show.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><span>How long does it take to build a 6x3 island booth?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="false"><span>How long does it take to build a 6x3 island booth?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>15 to 20 working days from approved design to dispatch, which is faster than a larger multi-storey build since the footprint and structure are more standardized.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><span>Is the booth reusable for future shows?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="false"><span>Is the booth reusable for future shows?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>Yes — the frame is built to be reassembled, so future shows typically only need updated graphics and minor refresh work rather than a full rebuild.</p></div>
         </div>
       </div>
@@ -511,9 +523,9 @@
           <li><a href="karachi.html">Karachi</a></li>
           <li><a href="lahore.html">Lahore</a></li>
           <li><a href="islamabad.html">Islamabad</a></li>
-          <li><a href="multan.html">Multan</a></li>
-          <li><a href="bahawalpur.html">Bahawalpur</a></li>
-          <li><a href="faisalabad.html">Faisalabad</a></li>
+          <li><a href="exhibition-stall-builders-punjab.html#multan">Multan</a></li>
+          <li><a href="exhibition-stall-builders-punjab.html#bahawalpur">Bahawalpur</a></li>
+          <li><a href="exhibition-stall-builders-punjab.html#faisalabad">Faisalabad</a></li>
         </ul>
       </div>
       <div class="fcol">
@@ -559,6 +571,8 @@
   <div class="footer-mark" aria-hidden="true">Trade Show Stall</div>
 </footer>
 
+<a href="https://wa.me/923352062771?text=Hi%20Trade%20Show%20Stall%2C%20I%20need%20an%20exhibition%20stall." class="wa-float" target="_blank" rel="noopener" aria-label="Chat with Trade Show Stall on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.7-5A8.5 8.5 0 1 1 21 11.5z"/></svg></a>
+
 <script>
   const toggle = document.getElementById('navToggle');
   const links = document.getElementById('navLinks');
@@ -594,5 +608,13 @@
   });
 </script>
 
+<script data-wa-track>
+(function(){
+  document.querySelectorAll('.faq-item').forEach(function(i){var b=i.querySelector('.faq-q');if(!b)return;new MutationObserver(function(){b.setAttribute('aria-expanded',i.classList.contains('open')?'true':'false');}).observe(i,{attributes:true,attributeFilter:['class']});});
+  document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a||typeof gtag!=='function')return;var h=a.getAttribute('href');
+    if(h.indexOf('wa.me')>-1)gtag('event','whatsapp_click',{page_location:location.href});
+    else if(h.indexOf('tel:')===0)gtag('event','phone_click',{page_location:location.href});});
+})();
+</script>
 </body>
 </html>

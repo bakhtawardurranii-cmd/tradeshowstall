@@ -351,6 +351,12 @@
   .footer-popular ul{display:flex; flex-wrap:wrap; gap:10px 28px;}
   .footer-popular ul li a{font-size:13px; color:rgba(255,255,255,0.6); transition:color .2s;}
   .footer-popular ul li a:hover{color:#fff;}
+
+  .faq-q{width:100%; background:none; border:0; padding:0; text-align:left; font-family:inherit;}
+  button.faq-q:focus-visible{outline:2px solid var(--indigo); outline-offset:4px; border-radius:6px;}
+  .wa-float{position:fixed; right:18px; bottom:18px; z-index:150; width:56px; height:56px; border-radius:50%; background:#1fa855; display:flex; align-items:center; justify-content:center; box-shadow:0 12px 28px rgba(20,18,39,0.28); transition:transform .25s var(--ease);}
+  .wa-float:hover{transform:scale(1.07);}
+  .wa-float svg{width:28px; height:28px; stroke:#fff; fill:none; stroke-width:2;}
 </style>
 </head>
 <body>
@@ -402,7 +408,7 @@
       </div>
     </div>
     <div class="page-header-media reveal">
-      <img src="images/exhibition-stall-booth-showcase.webp" alt="Formal exhibition stand built for a government-facing exhibitor in Islamabad" width="900" height="700">
+      <img src="images/exhibition-stall-booth-showcase-1200.webp" srcset="images/exhibition-stall-booth-showcase-800.webp 800w, images/exhibition-stall-booth-showcase-1200.webp 1200w, images/exhibition-stall-booth-showcase.webp 1920w" sizes="(max-width:760px) 100vw, 50vw" alt="Formal exhibition stand built for a government-facing exhibitor in Islamabad" width="900" height="700">
       <span class="tag">Pak-China Friendship Centre</span>
     </div>
   </section>
@@ -410,7 +416,7 @@
   <section class="content-section alt">
     <div class="wrap content-grid">
       <div class="content-media reveal">
-        <img src="images/exhibition-stall-booth-showcase.webp" width="1920" height="1071" alt="Exhibition stand build for a corporate exhibitor at a formal Islamabad venue" loading="lazy">
+        <img src="images/exhibition-stall-booth-showcase-1200.webp" srcset="images/exhibition-stall-booth-showcase-800.webp 800w, images/exhibition-stall-booth-showcase-1200.webp 1200w, images/exhibition-stall-booth-showcase.webp 1920w" sizes="(max-width:760px) 100vw, 50vw" width="1920" height="1071" alt="Exhibition stand build for a corporate exhibitor at a formal Islamabad venue" loading="lazy">
       </div>
       <div class="content-text reveal">
         <h2>What a Stand Builder Covers, Compared to a Designer or Fabricator</h2>
@@ -483,6 +489,12 @@
         <li><strong style="color:var(--ink);">Tax invoicing</strong> — standard documentation available on request at the quotation stage.</li>
         <li><strong style="color:var(--ink);">Lead time</strong> — request a quote as early as possible; internal sign-off often takes longer than the build itself.</li>
         <li><strong style="color:var(--ink);">Single PO</strong> — design, fabrication and installation billed under one contract rather than three separate vendor invoices.</li>
+      
+        <li><a href="exhibition-stall-cost-karachi.html">Exhibition Stall Cost in Karachi</a></li>
+        <li><a href="expo-centre-karachi-exhibitor-guide.html">Expo Centre Karachi Exhibitor Guide</a></li>
+        <li><a href="karachi-exhibitions-2026-2027.html">Karachi Exhibitions 2026–2027</a></li>
+        <li><a href="custom-vs-modular-exhibition-stalls.html">Custom vs Modular Stalls</a></li>
+        <li><a href="exhibition-stall-builders-punjab.html">Stall Builders in Multan, Faisalabad &amp; Bahawalpur</a></li>
       </ul>
     </div>
   </section>
@@ -512,27 +524,27 @@
       </div>
       <div class="faq-list reveal" id="faqList">
         <div class="faq-item open">
-          <div class="faq-q"><span>Can you provide formal quotations for a government procurement process?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="true"><span>Can you provide formal quotations for a government procurement process?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>Yes — we issue itemized written quotations against a stated scope, which is what most government and corporate procurement processes require before a purchase order is raised.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><span>Do you provide tax invoices for corporate or government clients?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="false"><span>Do you provide tax invoices for corporate or government clients?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>Yes, standard tax invoicing is available for corporate and government bookings. Let us know your documentation requirements when you request a quote so they're built into the paperwork from the start.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><span>What's the typical timeline from approval to an installed stand in Islamabad?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="false"><span>What's the typical timeline from approval to an installed stand in Islamabad?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>Once a design and quotation are approved, standard stands are usually ready in 3–4 weeks. Government bookings often need extra lead time for internal sign-off before that clock even starts, so we recommend requesting a quote as early as possible.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><span>Do you handle design and fabrication as a single contractor, or do we need separate vendors?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="false"><span>Do you handle design and fabrication as a single contractor, or do we need separate vendors?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>As a single contractor, we cover design, fabrication, transport and installation under one point of contact and one PO — you don't need to coordinate separate vendors for each stage.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><span>Is there a minimum booth size for a government or corporate pavilion?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="false"><span>Is there a minimum booth size for a government or corporate pavilion?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>No fixed minimum. We've built everything from a compact appointment-based reception counter to a full pavilion-scale stand at the Pak-China Friendship Centre.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><span>Can you refresh or rebuild an existing stand for a recurring annual event?</span><span class="plus"></span></div>
+          <button type="button" class="faq-q" aria-expanded="false"><span>Can you refresh or rebuild an existing stand for a recurring annual event?</span><span class="plus" aria-hidden="true"></span></button>
           <div class="faq-a"><p>Yes — if you exhibit at the same Islamabad venue annually, we can assess your existing structure for reuse, or fabricate updated panels and graphics rather than building from scratch each year.</p></div>
         </div>
       </div>
@@ -587,9 +599,9 @@
           <li><a href="karachi.html">Karachi</a></li>
           <li><a href="lahore.html">Lahore</a></li>
           <li><a href="islamabad.html">Islamabad</a></li>
-          <li><a href="multan.html">Multan</a></li>
-          <li><a href="bahawalpur.html">Bahawalpur</a></li>
-          <li><a href="faisalabad.html">Faisalabad</a></li>
+          <li><a href="exhibition-stall-builders-punjab.html#multan">Multan</a></li>
+          <li><a href="exhibition-stall-builders-punjab.html#bahawalpur">Bahawalpur</a></li>
+          <li><a href="exhibition-stall-builders-punjab.html#faisalabad">Faisalabad</a></li>
         </ul>
       </div>
       <div class="fcol">
@@ -635,6 +647,8 @@
   <div class="footer-mark" aria-hidden="true">Trade Show Stall</div>
 </footer>
 
+<a href="https://wa.me/923352062771?text=Hi%20Trade%20Show%20Stall%2C%20I%20need%20an%20exhibition%20stall." class="wa-float" target="_blank" rel="noopener" aria-label="Chat with Trade Show Stall on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.7-5A8.5 8.5 0 1 1 21 11.5z"/></svg></a>
+
 <script>
   const toggle = document.getElementById('navToggle');
   const links = document.getElementById('navLinks');
@@ -670,5 +684,13 @@
   });
 </script>
 
+<script data-wa-track>
+(function(){
+  document.querySelectorAll('.faq-item').forEach(function(i){var b=i.querySelector('.faq-q');if(!b)return;new MutationObserver(function(){b.setAttribute('aria-expanded',i.classList.contains('open')?'true':'false');}).observe(i,{attributes:true,attributeFilter:['class']});});
+  document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a||typeof gtag!=='function')return;var h=a.getAttribute('href');
+    if(h.indexOf('wa.me')>-1)gtag('event','whatsapp_click',{page_location:location.href});
+    else if(h.indexOf('tel:')===0)gtag('event','phone_click',{page_location:location.href});});
+})();
+</script>
 </body>
 </html>

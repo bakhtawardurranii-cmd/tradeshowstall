@@ -267,6 +267,12 @@
   .footer-popular ul{display:flex; flex-wrap:wrap; gap:10px 28px;}
   .footer-popular ul li a{font-size:13px; color:rgba(255,255,255,0.6); transition:color .2s;}
   .footer-popular ul li a:hover{color:#fff;}
+
+  .faq-q{width:100%; background:none; border:0; padding:0; text-align:left; font-family:inherit;}
+  button.faq-q:focus-visible{outline:2px solid var(--indigo); outline-offset:4px; border-radius:6px;}
+  .wa-float{position:fixed; right:18px; bottom:18px; z-index:150; width:56px; height:56px; border-radius:50%; background:#1fa855; display:flex; align-items:center; justify-content:center; box-shadow:0 12px 28px rgba(20,18,39,0.28); transition:transform .25s var(--ease);}
+  .wa-float:hover{transform:scale(1.07);}
+  .wa-float svg{width:28px; height:28px; stroke:#fff; fill:none; stroke-width:2;}
 </style>
 <script type="application/ld+json">
 {
@@ -286,7 +292,7 @@
   "image": [
     "https://tradeshowstall.com/images/logo-trade-show-stall.webp",
     "https://tradeshowstall.com/images/exhibition-stall-textile-wood-brass-karachi.webp",
-    "https://tradeshowstall.com/images/plfe-karachi-expo-center-exhibition-stall-front-view.jpg"
+    "https://tradeshowstall.com/images/plfe-karachi-expo-center-exhibition-stall-front-view.webp"
   ],
   "telephone": "+92-335-2062771",
   "email": "projects@tradeshowstall.com",
@@ -299,6 +305,10 @@
     "addressCountry": "PK"
   },
   "hasMap": "https://share.google/cwOi6jaf3mqXK3LWE",
+    "subOrganization": [
+      {"@id": "https://tradeshowstall.com/lahore.html#localbusiness"},
+      {"@id": "https://tradeshowstall.com/islamabad.html#localbusiness"}
+    ],
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
@@ -406,7 +416,7 @@
       </div>
     </div>
     <div class="page-header-media reveal">
-      <img src="images/exhibition-stall-booth-showcase.webp" alt="Exhibition booth reception counter installed for a brand exhibiting across Pakistan" width="900" height="700">
+      <img src="images/exhibition-stall-booth-showcase-1200.webp" srcset="images/exhibition-stall-booth-showcase-800.webp 800w, images/exhibition-stall-booth-showcase-1200.webp 1200w, images/exhibition-stall-booth-showcase.webp 1920w" sizes="(max-width:760px) 100vw, 50vw" alt="Exhibition booth reception counter installed for a brand exhibiting across Pakistan" width="900" height="700">
       <span class="tag">Six cities, one team</span>
     </div>
   </section>
@@ -423,9 +433,9 @@
         <a href="karachi.html" class="type-card reveal" style="display:block;"><span class="idx">01</span><h4>Karachi</h4><p>Expo Centre Karachi — textile, FMCG and technology showcases.</p></a>
 <a href="lahore.html" class="type-card reveal" style="display:block;"><span class="idx">02</span><h4>Lahore</h4><p>Expo Centre Lahore — including multi-storey and island builds.</p></a>
 <a href="islamabad.html" class="type-card reveal" style="display:block;"><span class="idx">03</span><h4>Islamabad</h4><p>Pak-China Friendship Centre — government-facing and corporate stalls.</p></a>
-<a href="multan.html" class="type-card reveal" style="display:block;"><span class="idx">04</span><h4>Multan</h4><p>Regional trade fairs — agricultural and industrial showcases.</p></a>
-<a href="bahawalpur.html" class="type-card reveal" style="display:block;"><span class="idx">05</span><h4>Bahawalpur</h4><p>South Punjab expos — seasonal and agri-focused fairs.</p></a>
-<a href="faisalabad.html" class="type-card reveal" style="display:block;"><span class="idx">06</span><h4>Faisalabad</h4><p>Textile & manufacturing expos — Pakistan's industrial hub.</p></a>
+<a href="exhibition-stall-builders-punjab.html#multan" class="type-card reveal" style="display:block;"><span class="idx">04</span><h4>Multan</h4><p>Regional trade fairs — agricultural and industrial showcases.</p></a>
+<a href="exhibition-stall-builders-punjab.html#bahawalpur" class="type-card reveal" style="display:block;"><span class="idx">05</span><h4>Bahawalpur</h4><p>South Punjab expos — seasonal and agri-focused fairs.</p></a>
+<a href="exhibition-stall-builders-punjab.html#faisalabad" class="type-card reveal" style="display:block;"><span class="idx">06</span><h4>Faisalabad</h4><p>Textile & manufacturing expos — Pakistan's industrial hub.</p></a>
       </div>
     </div>
   </section>
@@ -465,7 +475,7 @@
       <div class="section-head reveal" style="max-width:760px;">
         <h2>Multan</h2>
         <p>Design, fabrication and installation service for Multan exhibitors. Multan doesn't have a single dominant exhibition hall the way Karachi or Lahore do — trade fairs and business exhibitions here run at the city's larger hotels and convention spaces, arranged around each event's scale, so we confirm the exact venue, access route and loading arrangements as soon as a show is booked rather than assuming a standard hall layout.</p>
-        <p>Stalls are fabricated at our Karachi office and transported to Multan, keeping the whole build in-house rather than handing off to a local subcontractor. See full detail on our <a href="multan.html" class="inline-link">Multan page</a>.</p>
+        <p>Stalls are fabricated at our Karachi office and transported to Multan, keeping the whole build in-house rather than handing off to a local subcontractor. See full detail on our <a href="exhibition-stall-builders-punjab.html#multan" class="inline-link">Multan page</a>.</p>
       </div>
     </div>
   </section>
@@ -475,7 +485,7 @@
       <div class="section-head reveal" style="max-width:760px;">
         <h2>Bahawalpur</h2>
         <p>Design, fabrication and installation service for regional exhibitors across South Punjab, including seasonal and agri-focused expos. For outdoor and semi-open venues common in this region, material and structural choices are adjusted for weather resistance at the design stage rather than left as an afterthought.</p>
-        <p>See full detail and FAQ on our <a href="bahawalpur.html" class="inline-link">Bahawalpur page</a>.</p>
+        <p>See full detail and FAQ on our <a href="exhibition-stall-builders-punjab.html#bahawalpur" class="inline-link">Bahawalpur page</a>.</p>
       </div>
     </div>
   </section>
@@ -485,7 +495,7 @@
       <div class="section-head reveal" style="max-width:760px;">
         <h2>Faisalabad</h2>
         <p>Design, fabrication and installation service for the textile and manufacturing exhibitors that regularly show in Faisalabad, Pakistan's industrial hub. We design open display and sampling areas for hands-on product inspection, common at Faisalabad's textile shows, and build to the same in-house standard used across every other city.</p>
-        <p>See full detail and FAQ on our <a href="faisalabad.html" class="inline-link">Faisalabad page</a>.</p>
+        <p>See full detail and FAQ on our <a href="exhibition-stall-builders-punjab.html#faisalabad" class="inline-link">Faisalabad page</a>.</p>
       </div>
     </div>
   </section>
@@ -493,7 +503,7 @@
   <section class="content-section">
     <div class="wrap content-grid reverse">
       <div class="content-media reveal">
-        <img src="images/exhibition-stall-two-storey-tech-booth.webp" width="1920" height="1071" alt="Same Process, Every City — Trade Show Stall" loading="lazy">
+        <img src="images/exhibition-stall-two-storey-tech-booth-1200.webp" srcset="images/exhibition-stall-two-storey-tech-booth-800.webp 800w, images/exhibition-stall-two-storey-tech-booth-1200.webp 1200w, images/exhibition-stall-two-storey-tech-booth.webp 1920w" sizes="(max-width:760px) 100vw, 50vw" width="1920" height="1071" alt="Same Process, Every City — Trade Show Stall" loading="lazy">
       </div>
       <div class="content-text reveal">
         <h2>Same Process, Every City</h2>
@@ -544,7 +554,13 @@
           <li><a href="exhibition-branding.html">Branding</a></li>
           <li><a href="custom-6x3-island-booth.html">6x3 Island Booth</a></li>
           <li><a href="exhibition-stall-cost-pakistan.html">Cost Guide</a></li>
-        </ul>
+        
+        <li><a href="exhibition-stall-cost-karachi.html">Exhibition Stall Cost in Karachi</a></li>
+        <li><a href="expo-centre-karachi-exhibitor-guide.html">Expo Centre Karachi Exhibitor Guide</a></li>
+        <li><a href="karachi-exhibitions-2026-2027.html">Karachi Exhibitions 2026–2027</a></li>
+        <li><a href="custom-vs-modular-exhibition-stalls.html">Custom vs Modular Stalls</a></li>
+        <li><a href="exhibition-stall-builders-punjab.html">Stall Builders in Multan, Faisalabad &amp; Bahawalpur</a></li>
+      </ul>
       </div>
       <div class="fcol">
         <h5>Locations</h5>
@@ -552,9 +568,9 @@
           <li><a href="karachi.html">Karachi</a></li>
           <li><a href="lahore.html">Lahore</a></li>
           <li><a href="islamabad.html">Islamabad</a></li>
-          <li><a href="multan.html">Multan</a></li>
-          <li><a href="bahawalpur.html">Bahawalpur</a></li>
-          <li><a href="faisalabad.html">Faisalabad</a></li>
+          <li><a href="exhibition-stall-builders-punjab.html#multan">Multan</a></li>
+          <li><a href="exhibition-stall-builders-punjab.html#bahawalpur">Bahawalpur</a></li>
+          <li><a href="exhibition-stall-builders-punjab.html#faisalabad">Faisalabad</a></li>
         </ul>
       </div>
       <div class="fcol">
@@ -600,6 +616,8 @@
   <div class="footer-mark" aria-hidden="true">Trade Show Stall</div>
 </footer>
 
+<a href="https://wa.me/923352062771?text=Hi%20Trade%20Show%20Stall%2C%20I%20need%20an%20exhibition%20stall." class="wa-float" target="_blank" rel="noopener" aria-label="Chat with Trade Show Stall on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.7-5A8.5 8.5 0 1 1 21 11.5z"/></svg></a>
+
 <script>
   const toggle = document.getElementById('navToggle');
   const links = document.getElementById('navLinks');
@@ -635,5 +653,13 @@
   });
 </script>
 
+<script data-wa-track>
+(function(){
+  document.querySelectorAll('.faq-item').forEach(function(i){var b=i.querySelector('.faq-q');if(!b)return;new MutationObserver(function(){b.setAttribute('aria-expanded',i.classList.contains('open')?'true':'false');}).observe(i,{attributes:true,attributeFilter:['class']});});
+  document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a||typeof gtag!=='function')return;var h=a.getAttribute('href');
+    if(h.indexOf('wa.me')>-1)gtag('event','whatsapp_click',{page_location:location.href});
+    else if(h.indexOf('tel:')===0)gtag('event','phone_click',{page_location:location.href});});
+})();
+</script>
 </body>
 </html>
