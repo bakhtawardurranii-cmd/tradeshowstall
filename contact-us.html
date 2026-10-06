@@ -282,7 +282,7 @@
     {
       "@type": "ContactPage",
       "@id": "https://tradeshowstall.com/contact-us.html#webpage",
-      "dateModified": "2026-10-01",
+      "dateModified": "2026-10-06",
       "url": "https://tradeshowstall.com/contact-us.html",
       "name": "Contact Trade Show Stall",
       "about": {
@@ -744,6 +744,20 @@
   document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a||typeof gtag!=='function')return;var h=a.getAttribute('href');
     if(h.indexOf('wa.me')>-1)gtag('event','whatsapp_click',{page_location:location.href});
     else if(h.indexOf('tel:')===0)gtag('event','phone_click',{page_location:location.href});});
+})();
+</script>
+
+<script>
+/* Prefill the brief form when arriving from a "Share your stall details" link (?show=...&dates=...) */
+(function(){
+  try{
+    var q=new URLSearchParams(location.search), show=q.get('show'), dates=q.get('dates');
+    if(!show) return;
+    var form=document.getElementById('stallBriefForm'); if(!form) return;
+    var msg=form.querySelector('[name="Message"]'), venue=form.querySelector('[name="Venue and City"]');
+    if(venue && !venue.value) venue.value='Expo Centre Karachi';
+    if(msg && !msg.value) msg.value='I am exhibiting at '+show.slice(0,80)+(dates?' ('+dates.slice(0,40)+')':'')+'. Booth size and branding details: ';
+  }catch(e){}
 })();
 </script>
 </body>
