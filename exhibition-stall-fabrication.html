@@ -97,7 +97,7 @@
       "name": "How long does fabrication take once a design is approved?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Standard stalls typically take 10\u201320 days to fabricate depending on size and material lead times. Multi-storey or heavily custom builds can run 3\u20135 weeks."
+        "text": "Fabrication generally takes 2\u20135 weeks depending on size, structure and material lead times. Smaller, simpler stalls sit toward the shorter end; multi-storey or heavily custom builds sit toward the longer end."
       }
     },
     {
@@ -257,7 +257,7 @@
   .type-card{background:#fff; border:1px solid var(--line); border-radius:var(--radius-md); padding:24px 22px; transition:transform .3s var(--ease), box-shadow .3s var(--ease);}
   .type-card:hover{transform:translateY(-4px); box-shadow:0 16px 34px rgba(20,18,39,0.10);}
   .type-card .idx{font-family:'Fraunces',serif; font-style:italic; color:var(--gold); font-size:22px; margin-bottom:10px; display:block;}
-  .type-card h4{font-size:16px; font-weight:700; margin:0 0 8px;}
+  .type-card h4,.type-card h3{font-size:16px; font-weight:700; margin:0 0 8px;}
   .type-card p{font-size:13.5px; color:var(--ink-soft); line-height:1.6; margin:0;}
   @media (max-width:760px){ .type-grid{grid-template-columns:1fr 1fr;} }
   @media (max-width:500px){ .type-grid{grid-template-columns:1fr;} }
@@ -269,7 +269,7 @@
   .process-row{display:grid; grid-template-columns:repeat(7,1fr); gap:14px;}
   .process-cell{background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:14px; padding:18px 14px; min-height:150px;}
   .process-cell .n{font-family:'Fraunces',serif; font-style:italic; color:var(--gold); font-size:20px;}
-  .process-cell h5{font-size:13px; font-weight:700; margin:14px 0 6px;}
+  .process-cell h5,.process-cell h3{font-size:13px; font-weight:700; margin:14px 0 6px;}
   .process-cell p{font-size:11.5px; color:rgba(255,255,255,0.55); line-height:1.5; margin:0;}
   @media (max-width:920px){ .process-row{grid-template-columns:repeat(4,1fr);} }
   @media (max-width:600px){ .process-row{grid-template-columns:repeat(2,1fr);} .process-strip{padding:40px 24px;} }
@@ -316,7 +316,7 @@
   .footer-social a{width:36px; height:36px; border-radius:50%; border:1px solid rgba(255,255,255,0.16); display:flex; align-items:center; justify-content:center; transition:.25s;}
   .footer-social a:hover{background:var(--red); border-color:var(--red);}
   .footer-social svg{width:15px; height:15px; stroke:#fff;}
-  .fcol h5{font-size:12.5px; font-weight:700; letter-spacing:1.2px; text-transform:uppercase; color:var(--gold); margin:0 0 20px;}
+  .fcol h5,.fcol h3{font-size:12.5px; font-weight:700; letter-spacing:1.2px; text-transform:uppercase; color:var(--gold); margin:0 0 20px;}
   .fcol ul li{margin-bottom:12px;}
   .fcol ul li a{font-size:14px; color:rgba(255,255,255,0.68); transition:color .2s;}
   .fcol ul li a:hover{color:#fff;}
@@ -329,7 +329,7 @@
   a:focus-visible, button:focus-visible{outline:2px solid var(--gold); outline-offset:3px; border-radius:4px;}
 
   .footer-popular{padding:26px 0; border-bottom:1px solid rgba(255,255,255,0.1);}
-  .footer-popular h5{font-size:11.5px; font-weight:700; letter-spacing:1.2px; text-transform:uppercase; color:var(--gold); margin:0 0 14px;}
+  .footer-popular h5,.footer-popular h3{font-size:11.5px; font-weight:700; letter-spacing:1.2px; text-transform:uppercase; color:var(--gold); margin:0 0 14px;}
   .footer-popular ul{display:flex; flex-wrap:wrap; gap:10px 28px;}
   .footer-popular ul li a{font-size:13px; color:rgba(255,255,255,0.6); transition:color .2s;}
   .footer-popular ul li a:hover{color:#fff;}
@@ -431,9 +431,9 @@
         <p style="font-size:15.5px; line-height:1.75; color:var(--ink-soft); margin:0;">A stall that only needs to survive one installation can be built looser than one that will be assembled and dismantled repeatedly across a season of shows.</p>
       </div>
       <div class="type-grid">
-        <div class="type-card reveal"><span class="idx">01</span><h4>Joint Tolerance</h4><p>Panel joints built to withstand repeated assembly without warping or gapping.</p></div>
-<div class="type-card reveal"><span class="idx">02</span><h4>Hardware Grade</h4><p>Connectors and fittings rated for the number of rebuilds the structure will see.</p></div>
-<div class="type-card reveal"><span class="idx">03</span><h4>Finish Durability</h4><p>Surface finishes chosen to resist transport handling, not just showroom conditions.</p></div>
+        <div class="type-card reveal"><span class="idx">01</span><h3>Joint Tolerance</h3><p>Panel joints built to withstand repeated assembly without warping or gapping.</p></div>
+<div class="type-card reveal"><span class="idx">02</span><h3>Hardware Grade</h3><p>Connectors and fittings rated for the number of rebuilds the structure will see.</p></div>
+<div class="type-card reveal"><span class="idx">03</span><h3>Finish Durability</h3><p>Surface finishes chosen to resist transport handling, not just showroom conditions.</p></div>
       </div>
     </div>
   </section>
@@ -448,27 +448,21 @@
       </div>
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-bottom:32px;">
         <div>
-          <h4 style="font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:0.6px; color:var(--red); margin:0 0 12px;">Who this is for</h4>
+          <h3 style="font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:0.6px; color:var(--red); margin:0 0 12px;">Who this is for</h3>
           <p style="font-size:14.5px; line-height:1.75; color:var(--ink-soft); margin:0;">Brands with an approved 3D concept ready to move into production — whether that design came from our team or was supplied by an outside designer.</p>
         </div>
         <div>
-          <h4 style="font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:0.6px; color:var(--red); margin:0 0 12px;">What's included</h4>
+          <h3 style="font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:0.6px; color:var(--red); margin:0 0 12px;">What's included</h3>
           <ul style="margin:0; padding-left:18px; color:var(--ink-soft); font-size:14.5px; line-height:1.8;">
             <li>Carpentry, metalwork and finishing to the approved render</li>
             <li>Material and hardware sourcing matched to specification</li>
             <li>Quality checks before dispatch to the venue</li>
-          
-        <li><a href="exhibition-stall-cost-karachi.html">Exhibition Stall Cost in Karachi</a></li>
-        <li><a href="expo-centre-karachi-exhibitor-guide.html">Expo Centre Karachi Exhibitor Guide</a></li>
-        <li><a href="karachi-exhibitions-2026-2027.html">Karachi Exhibitions 2026–2027</a></li>
-        <li><a href="custom-vs-modular-exhibition-stalls.html">Custom vs Modular Stalls</a></li>
-        <li><a href="exhibition-stall-builders-punjab.html">Stall Builders in Multan, Faisalabad &amp; Bahawalpur</a></li>
       </ul>
         </div>
       </div>
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-bottom:32px;">
         <div>
-          <h4 style="font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:0.6px; color:var(--red); margin:0 0 12px;">What we need from you</h4>
+          <h3 style="font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:0.6px; color:var(--red); margin:0 0 12px;">What we need from you</h3>
           <ul style="margin:0; padding-left:18px; color:var(--ink-soft); font-size:14.5px; line-height:1.8;">
             <li>Final approved 3D concept and dimensioned drawings</li>
             <li>Material and finish references or samples</li>
@@ -476,17 +470,17 @@
           </ul>
         </div>
         <div>
-          <h4 style="font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:0.6px; color:var(--red); margin:0 0 12px;">Timeline</h4>
-          <p style="font-size:14.5px; line-height:1.75; color:var(--ink-soft); margin:0;">Fabrication typically runs 15 days to a month from approved design to dispatch, depending on booth size, structural complexity and finish level. Large island or multi-storey builds sit toward the longer end.</p>
+          <h3 style="font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:0.6px; color:var(--red); margin:0 0 12px;">Timeline</h3>
+          <p style="font-size:14.5px; line-height:1.75; color:var(--ink-soft); margin:0;">Fabrication typically runs 2–5 weeks from approved design to dispatch, depending on booth size, structural complexity and finish level. Large island or multi-storey builds sit toward the longer end.</p>
         </div>
       </div>
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:28px; padding-top:28px; border-top:1px solid var(--line);">
         <div>
-          <h4 style="font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:0.6px; color:var(--red); margin:0 0 12px;">What it typically costs</h4>
+          <h3 style="font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:0.6px; color:var(--red); margin:0 0 12px;">What it typically costs</h3>
           <p style="font-size:14.5px; line-height:1.75; color:var(--ink-soft); margin:0;">Fabrication cost ranges from roughly PKR 50,000 for a small modular corner stand to PKR 500,000 and above for large custom or multi-storey structures — driven mainly by size, materials, structural complexity and how urgent the timeline is.</p>
         </div>
         <div>
-          <h4 style="font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:0.6px; color:var(--red); margin:0 0 12px;">Revisions &amp; approval process</h4>
+          <h3 style="font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:0.6px; color:var(--red); margin:0 0 12px;">Revisions &amp; approval process</h3>
           <p style="font-size:14.5px; line-height:1.75; color:var(--ink-soft); margin:0;">We work in short stages rather than one long build-and-reveal: material samples, a structural mock-up and finish checks are shared with you as they are completed, so adjustments happen before a panel is finished, not after.</p>
         </div>
       </div>
@@ -518,7 +512,7 @@
       <div class="faq-list reveal" id="faqList">
         <div class="faq-item open">
           <button type="button" class="faq-q" aria-expanded="true"><span>How long does fabrication take once a design is approved?</span><span class="plus" aria-hidden="true"></span></button>
-          <div class="faq-a"><p>Standard stalls typically take 10–20 days to fabricate depending on size and material lead times. Multi-storey or heavily custom builds can run 3–5 weeks.</p></div>
+          <div class="faq-a"><p>Fabrication generally takes 2–5 weeks depending on size, structure and material lead times. Smaller, simpler stalls sit toward the shorter end; multi-storey or heavily custom builds sit toward the longer end.</p></div>
         </div>
         <div class="faq-item">
           <button type="button" class="faq-q" aria-expanded="false"><span>Can you fabricate a stall designed by someone else?</span><span class="plus" aria-hidden="true"></span></button>
@@ -569,7 +563,7 @@
       </div>
 
       <div class="fcol">
-        <h5>Services</h5>
+        <h3>Services</h3>
         <ul>
           <li><a href="exhibition-stall-design.html">Stall Design</a></li>
           <li><a href="3d-exhibition-booth-design.html">3D Booth Design</a></li>
@@ -589,7 +583,7 @@
       </div>
 
       <div class="fcol">
-        <h5>Locations</h5>
+        <h3>Locations</h3>
         <ul>
           <li><a href="karachi.html">Karachi</a></li>
           <li><a href="lahore.html">Lahore</a></li>
@@ -601,7 +595,7 @@
       </div>
 
       <div class="fcol">
-        <h5>Company</h5>
+        <h3>Company</h3>
         <ul>
           <li><a href="about-us.html">About Us</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
@@ -613,7 +607,7 @@
       </div>
 
       <div class="fcol">
-        <h5>Get in touch</h5>
+        <h3>Get in touch</h3>
         <ul>
           <li><a href="tel:+923352062771">0335 2062771</a></li>
           <li><a href="https://wa.me/923352062771" target="_blank" rel="noopener">WhatsApp Us</a></li>
@@ -628,7 +622,7 @@
     </div>
 
         <div class="footer-popular">
-      <h5>Popular Searches</h5>
+      <h3>Popular Searches</h3>
       <ul>
         <li><a href="exhibition-stall-fabricator-karachi.html">Exhibition Stall Fabricator in Karachi</a></li>
         <li><a href="exhibition-stall-designer-lahore.html">Exhibition Stall Designer in Lahore</a></li>
